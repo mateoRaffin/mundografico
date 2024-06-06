@@ -1,0 +1,364 @@
+@font-face {
+    font-family: 'nunito';
+    src: url(../fonts/Nunito_Sans/static/NunitoSans_10pt-Light.ttf);
+}
+
+@font-face {
+    font-family: 'nunitobold';
+    src: url(../fonts/Nunito_Sans/static/NunitoSans_10pt-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'semibold';
+    src: url(../fonts/Nunito_Sans/static/NunitoSans_10pt-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'oswald';
+    src: url(../fonts/Oswald/static/Oswald-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'oswaldreg';
+    src: url(../fonts/Oswald/static/Oswald-Regular.ttf);
+}
+
+/* Header - Nav */
+
+.header-index {
+    margin-bottom: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #0f9ac0;
+}
+
+.logo-mundografico {
+    width: 60px;
+    height: 60px;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 22px;
+    color: #FAFAFA;
+    text-decoration: none;
+}
+
+.navbar li {
+    margin: 0 25px;
+    font-family: "nunito";
+}
+
+.icono-wsapp1 {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.icono-wsapp1 img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Main - Grilla */
+
+.section-presentacion-grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas: "presentacion carousel";
+    margin-bottom: 125px;
+}
+
+.presentacion img {
+    width: 80%;
+    height: 350px;
+}
+
+.titulo-main {
+    font-size: 70px;
+    font-family: "oswald";
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.subt-main {
+    font-size: 45px;
+    font-family: "nunito";
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.presentacion {
+    grid-area: presentacion;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    justify-self: center;
+}
+
+/* Carousel */
+.carousel {
+    grid-area: carousel;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    display: flex;
+    margin-right: 10px;
+}
+
+/* Galeria */
+.titulo-galeria {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: "oswaldreg";
+}
+
+.grilla-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 100px;
+}
+
+.grilla-galeria img {
+    width: 380px;
+    height: 450px;
+}
+
+.card-1 {
+    justify-self: center;
+    margin-bottom: 5px;
+}
+
+.card-2 {
+    justify-self: center;
+    margin-bottom: 5px;
+}
+
+.card-3 {
+    justify-self: center;
+    margin-bottom: 5px;
+}
+
+.card-4 {
+    justify-self: center;
+    margin-bottom: 5px;
+}
+
+.card-5 {
+    justify-self: center;
+    margin-bottom: 5px;
+}
+
+.card-6 {
+    justify-self: center;
+    margin-bottom: 5px;
+}
+
+/* Sobre Nosotros */
+.sobre-nosotros-index {
+    background-color: #0f9ac0;
+    /*#26537e*/
+    padding: 5% 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre-nosotros-1 {
+    background-color: #0f9ac0;
+    /*#26537e*/
+    padding: 5% 5%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 283px;
+}
+
+.titulo-nosotros {
+    color: #FCF2FB;
+    font-size: 50px;
+    font-family: "oswald";
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.parrafo-nosotros {
+    font-size: 35px;
+    color: #FCF2FB;
+    font-family: "nunito";
+}
+
+/* Productos */
+.productos-index {
+    margin: 150px 0;
+}
+
+.contenedor-prod {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+}
+
+.card img {
+    width: 500px;
+    height: 450px;
+}
+
+.main-productos {
+    margin-bottom: 150px;
+}
+
+.titulo-producto {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: "oswaldreg";
+    margin-bottom: 150px;
+}
+
+.card-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.card-productos img {
+    width: 90%;
+}
+
+.card-prod p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'semibold';
+    font-size: 25px;
+}
+
+.card-prod {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-5 {
+    width: 800px;
+    height: 800px;
+}
+
+.p-6 {
+    width: 450px;
+    height: 800px;
+}
+
+/* Contacto */
+.contacto-index {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.titulo-contacto {
+    font-size: 50px;
+    font-family: "oswald";
+    display: flex;
+    justify-content: center;
+}
+
+.redes-index img {
+    width: 60px;
+    height: 60px;
+}
+
+.redes-index {
+    display: flex;
+    justify-content: space-around;
+    margin: 55px;
+}
+
+.form-index {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.boton-form {
+    color: #FCF2FB;
+    background-color: #32A6D5;
+    /*#26537e*/
+    border: #32A6D5;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #32A6D5;
+    padding-top: 10px;
+}
+
+footer p {
+    color: #FAFAFA;
+    font-size: 20px;
+    font-family: "semibold";
+    display: flex;
+}
+
+.footer-contacto {
+    display: flex;
+    margin-top: 100px;
+}
+
+.footer-aboutus {
+    display: flex;
+    padding-top: 10px;
+}
+
+.footer-productos {
+    display: flex;
+    padding-top: 10px;
+}
+
+
+@media (max-width: 550px) {
+    .header-index {
+        margin-bottom: 100px;
+        background-color: #FBD67F;
+    }
+    .icono-wsapp1 {
+        display: none;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .section-presentacion-grilla {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 200px);
+        grid-template-areas: "presentacion" 
+                             "carousel";
+        margin-bottom: 125px;
+    }
+
+
+}
