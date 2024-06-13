@@ -307,6 +307,12 @@
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.mapa-contacto {
+    width: 600px;
+    height: 450px;
+}
+
+
 /* Footer */
 footer {
     display: flex;
@@ -339,26 +345,211 @@ footer p {
 
 
 @media (max-width: 550px) {
+
+    /*Header-Nav*/
     .header-index {
         margin-bottom: 100px;
-        background-color: #FBD67F;
+        background-color: #485da1;
+        /* #07143F */
     }
+
+    .navbar {
+        width: 90%;
+    }
+
+    .navbar-nav {
+
+        flex-direction: column;
+    }
+
+    .logo-mundografico {
+        width: 40px;
+        height: 40px;
+    }
+
     .icono-wsapp1 {
         display: none;
     }
-    .navbar-nav {
-        display: flex;
-        flex-direction: column;
 
-    }
+    /*Grilla*/
     .section-presentacion-grilla {
-        display: grid;
+
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 200px);
-        grid-template-areas: "presentacion" 
-                             "carousel";
+        grid-template-rows: auto;
+        grid-template-areas:
+            "presentacion"
+            "carousel";
         margin-bottom: 125px;
     }
 
+    .presentacion {
+        grid-column: auto;
+        grid-row: auto;
+        width: 80%;
+        height: auto;
+    }
 
+    .titulo-main {
+        font-size: 50px;
+        justify-content: flex-start;
+    }
+
+    .subt-main {
+        font-size: 25px;
+        margin-left: -30px;
+    }
+
+    .presentacion img {
+        width: 70%;
+        height: auto;
+    }
+
+    .carousel-inner {
+        width: 70%;
+        height: auto;
+    }
+
+    .carousel {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    /* Sobre Nosotros */
+    .sobre-nosotros-index {
+        background-color: #485da1;
+        /*#26537e*/
+        flex-direction: column;
+    }
+
+    .sobre-nosotros-1 {
+        background-color: #485da1;
+        /*#26537e*/
+        flex-direction: column;
+        margin-bottom: 283px;
+    }
+
+    .titulo-nosotros {
+        font-size: 35px;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+
+    .parrafo-nosotros {
+        font-size: 25px;
+    }
+
+    /* Galeria */
+    .titulo-galeria {
+        font-size: 35px;
+    }
+
+    .grilla-galeria {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        margin-top: 100px;
+    }
+
+    .grilla-galeria img {
+        width: 380px;
+        height: 450px;
+    }
+
+    /* Productos */
+    .contenedor-prod {
+        flex-direction: column;
+    }
+
+    .card {
+        align-items: center;
+    }
+
+    .card img {
+        width: 80%;
+        height: auto;
+    }
+
+    .titulo-producto {
+        font-size: 40px;
+    }
+
+    .card-productos {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        flex-direction: column;
+    }
+
+    .card-productos img {
+        width: 90%;
+        height: auto;
+    }
+
+    .card-prod p {
+        width: 70%;
+    }
+
+    .card-prod {
+        width: 70%;
+        height: auto;
+    }
+
+    .p-5 {
+        width: 60%;
+        height: auto;
+    }
+
+    .p-6 {
+        width: 60%;
+        height: auto;
+    }
+
+    /*Contacto*/
+    .form-index {
+        flex-direction: column;
+    }
+
+    .titulo-contacto {
+        font-size: 35px;
+        font-family: "oswald";
+        display: flex;
+        justify-content: center;
+    }
+
+    .redes-index img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mapa-contacto {
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .formulario-contacto {
+        width: 70%;
+        margin-left: 10px;
+    }
+
+    .boton-form {
+        background-color: #485da1;
+        /*#26537e*/
+        border: #485da1;
+    }
+
+    /*Footer*/
+    footer {
+        background-color: #485da1;
+    }
+
+    .footer-contacto {
+        background-color: #485da1
+    }
+
+    .footer-aboutus {
+        background-color: #485da1
+    }
+
+    .footer-productos {
+        background-color: #485da1
+    }
 }
