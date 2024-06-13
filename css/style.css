@@ -207,11 +207,11 @@
     justify-content: center;
 }
 
-.card {
+.tarjeta-sinbordes-index {
     display: flex;
 }
 
-.card img {
+.tarjeta-sinbordes-index img {
     width: 500px;
     height: 450px;
 }
@@ -386,7 +386,10 @@ footer p {
         grid-column: auto;
         grid-row: auto;
         width: 80%;
-        height: auto;
+        /*height: auto;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .titulo-main {
@@ -405,13 +408,14 @@ footer p {
     }
 
     .carousel-inner {
-        width: 70%;
+        width: 80%;
         height: auto;
+        margin-left: 10px;
     }
 
     .carousel {
         grid-column: auto;
-        grid-row: auto;
+        grid-row: auto;   
     }
 
     /* Sobre Nosotros */
@@ -459,11 +463,14 @@ footer p {
         flex-direction: column;
     }
 
-    .card {
+    .tarjeta-sinbordes-index {
+        justify-content: center;
+        border: none;
+        border-radius: none;
         align-items: center;
     }
 
-    .card img {
+    .tarjeta-sinbordes-index img {
         width: 80%;
         height: auto;
     }
@@ -476,6 +483,8 @@ footer p {
         grid-template-columns: auto;
         grid-template-rows: auto;
         flex-direction: column;
+        display: flex;
+        align-items: center;
     }
 
     .card-productos img {
@@ -484,11 +493,11 @@ footer p {
     }
 
     .card-prod p {
-        width: 70%;
+        width: 100%;
     }
 
     .card-prod {
-        width: 70%;
+        width: 80%;
         height: auto;
     }
 
@@ -508,7 +517,7 @@ footer p {
     }
 
     .titulo-contacto {
-        font-size: 35px;
+        font-size: 25px;
         font-family: "oswald";
         display: flex;
         justify-content: center;
@@ -526,8 +535,9 @@ footer p {
     }
 
     .formulario-contacto {
-        width: 70%;
-        margin-left: 10px;
+        width: 80%;
+        display: flex;
+        align-self: center;
     }
 
     .boton-form {
