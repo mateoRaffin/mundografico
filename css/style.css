@@ -345,10 +345,10 @@ footer p {
 
 
 @media (max-width: 550px) {
-
+    /* Quitar algunos margin - Ver */
     /*Header-Nav*/
     .header-index {
-        margin-bottom: 100px;
+        margin-bottom: 40px;
         background-color: #485da1;
         /* #07143F */
     }
@@ -512,6 +512,10 @@ footer p {
     }
 
     /*Contacto*/
+    .contacto-index {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
     .form-index {
         flex-direction: column;
     }
@@ -562,4 +566,8 @@ footer p {
     .footer-productos {
         background-color: #485da1
     }
+}
+
+@media (min-width: 551px) and (max-width: 1199px) {
+
 }
