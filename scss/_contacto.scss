@@ -1,0 +1,92 @@
+/* Contacto */
+.contacto-index {
+    margin-top: 200px;
+    margin-bottom: 100px;
+
+    .titulo-contacto {
+        font-size: 50px;
+        font-family: map-get($fuentes, titulos);
+        display: flex;
+        justify-content: center;
+    }
+
+    .redes-index {
+        display: flex;
+        justify-content: space-around;
+        margin: 60px;
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    .form-index {
+        display: flex;
+        justify-content: space-around;
+        align-self: center;
+
+        .mapa-contacto {
+            width: 600px;
+            height: 450px;
+        }
+
+        .formulario-contacto {
+            display: flex;
+            flex-direction: column;
+
+            .boton-form {
+                color: $color-enviar;
+                background-color: $color-fondo; /*#26537e*/
+                border: $color-fondo;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+        }
+    }
+}
+
+.main-contacto {
+    .contenedor-contacto {
+        .titulo-contacto {
+            font-size: 50px;
+            font-family: map-get($fuentes, titulos);
+            display: flex;
+            justify-content: center;
+        }
+
+        .redes-index {
+            display: flex;
+            justify-content: space-around;
+            margin: 60px;
+
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        .form-index {
+            display: flex;
+            justify-content: space-around;
+            align-self: center;
+
+            .mapa-contacto {
+                width: 600px;
+                height: 450px;
+            }
+
+            .formulario-contacto {
+                display: flex;
+                flex-direction: column;
+
+                .boton-form {
+                    color: $color-texto;
+                    background-color: $color-fondo;
+                    /*#26537e*/
+                    border: $color-fondo;
+                    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                }
+            }
+        }
+    }
+}

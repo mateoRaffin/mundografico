@@ -1,0 +1,49 @@
+/* Sobre Nosotros */
+.sobre-nosotros-index {
+    background-color: $color-fondo;
+    /*#26537e*/
+    padding: 5% 5%;
+    display: flex;
+    flex-direction: column;
+
+    .titulo-nosotros {
+        color: $color-texto;
+        font-size: 50px;
+        font-family: map-get($fuentes, titulos);
+        display: flex;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+
+    .parrafo-nosotros {
+        font-size: 35px;
+        color: $color-texto;
+        font-family: map-get($fuentes, subtitulos-parrafos);
+    }
+}
+
+.main-sobre-nosotros {
+    .sobre-nosotros-1 {
+        background-color: $color-fondo;
+        /*#26537e*/
+        padding: 5% 5%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 291px;
+
+        .titulo-nosotros {
+            color: $color-texto;
+            font-size: 50px;
+            font-family: map-get($fuentes, titulos);
+            display: flex;
+            justify-content: center;
+            margin-bottom: 70px;
+        }
+
+        .parrafo-nosotros {
+            font-size: 35px;
+            color: $color-texto;
+            font-family: map-get($fuentes, subtitulos-parrafos);
+        }
+    }
+}

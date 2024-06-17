@@ -1,0 +1,538 @@
+@font-face {
+  font-family: "nunito";
+  src: url(../fonts/Nunito_Sans/static/NunitoSans_10pt-Light.ttf);
+}
+@font-face {
+  font-family: "nunitobold";
+  src: url(../fonts/Nunito_Sans/static/NunitoSans_10pt-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "semibold";
+  src: url(../fonts/Nunito_Sans/static/NunitoSans_10pt-SemiBold.ttf);
+}
+@font-face {
+  font-family: "oswald";
+  src: url(../fonts/Oswald/static/Oswald-Bold.ttf);
+}
+@font-face {
+  font-family: "oswaldreg";
+  src: url(../fonts/Oswald/static/Oswald-Regular.ttf);
+}
+/*$fuente
+  $color-secundario
+Otro color,borde,boton #32A6D5*/
+/* agregar extend o mixins*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header - Nav */
+.header-index {
+  margin-bottom: 100px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #0f9ac0;
+}
+.header-index .logo-mundografico {
+  width: 60px;
+  height: 60px;
+}
+.header-index .icono-wsapp1 {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.header-index .icono-wsapp1 img {
+  width: 50px;
+  height: 50px;
+}
+.header-index .navbar-collapse {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-index .navbar-collapse li {
+  margin: 0 25px;
+  font-family: "nunito";
+}
+.header-index .navbar-collapse a {
+  font-size: 22px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+/* Main - Grilla */
+.main-index .section-presentacion-grilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 200px);
+  grid-template-areas: "presentacion carousel";
+  margin-bottom: 125px;
+}
+.main-index .section-presentacion-grilla .presentacion {
+  grid-area: presentacion;
+  grid-column: 1/2;
+  grid-row: 1/4;
+  justify-self: center;
+}
+.main-index .section-presentacion-grilla .presentacion .titulo-main {
+  font-size: 70px;
+  font-family: "oswald";
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.main-index .section-presentacion-grilla .presentacion .subt-main {
+  font-size: 45px;
+  font-family: "oswaldreg";
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.main-index .section-presentacion-grilla .presentacion img {
+  width: 80%;
+  height: 350px;
+}
+.main-index .section-presentacion-grilla .carousel {
+  grid-area: carousel;
+  grid-column: 2/3;
+  grid-row: 1/4;
+  display: flex;
+  margin-right: 10px;
+}
+
+/* Sobre Nosotros */
+.sobre-nosotros-index {
+  background-color: #0f9ac0;
+  /*#26537e*/
+  padding: 5% 5%;
+  display: flex;
+  flex-direction: column;
+}
+.sobre-nosotros-index .titulo-nosotros {
+  color: #FAFAFA;
+  font-size: 50px;
+  font-family: "oswald";
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+.sobre-nosotros-index .parrafo-nosotros {
+  font-size: 35px;
+  color: #FAFAFA;
+  font-family: "oswaldreg";
+}
+
+.main-sobre-nosotros .sobre-nosotros-1 {
+  background-color: #0f9ac0;
+  /*#26537e*/
+  padding: 5% 5%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 291px;
+}
+.main-sobre-nosotros .sobre-nosotros-1 .titulo-nosotros {
+  color: #FAFAFA;
+  font-size: 50px;
+  font-family: "oswald";
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+.main-sobre-nosotros .sobre-nosotros-1 .parrafo-nosotros {
+  font-size: 35px;
+  color: #FAFAFA;
+  font-family: "oswaldreg";
+}
+
+/* Productos */
+.productos-index {
+  margin: 150px 0;
+}
+.productos-index .contenedor-prod {
+  display: flex;
+  justify-content: center;
+}
+.productos-index .contenedor-prod .tarjeta-sinbordes-index {
+  display: flex;
+}
+.productos-index .contenedor-prod img {
+  width: 400px;
+  height: 440px;
+}
+
+.main-productos {
+  margin-bottom: 150px;
+}
+.main-productos .titulo-producto {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-family: "oswald";
+  margin-bottom: 150px;
+}
+.main-productos .card-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.main-productos .card-productos .card-prod {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-productos .card-productos .card-prod p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "semibold";
+  font-size: 25px;
+}
+.main-productos .card-productos .card-prod img {
+  width: 90%;
+}
+.main-productos .card-productos .p-5 {
+  width: 800px;
+  height: 800px;
+}
+.main-productos .card-productos .p-6 {
+  width: 450px;
+  height: 800px;
+}
+
+/* Galeria */
+.main-galeria .titulo-galeria {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  font-family: "oswald";
+}
+.main-galeria .grilla-galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  margin-top: 100px;
+}
+.main-galeria .grilla-galeria img {
+  width: 380px;
+  height: 450px;
+}
+.main-galeria .grilla-galeria .card-1 {
+  justify-self: center;
+  margin-bottom: 5px;
+}
+.main-galeria .grilla-galeria .card-2 {
+  justify-self: center;
+  margin-bottom: 5px;
+}
+.main-galeria .grilla-galeria .card-3 {
+  justify-self: center;
+  margin-bottom: 5px;
+}
+.main-galeria .grilla-galeria .card-4 {
+  justify-self: center;
+  margin-bottom: 5px;
+}
+.main-galeria .grilla-galeria .card-5 {
+  justify-self: center;
+  margin-bottom: 5px;
+}
+.main-galeria .grilla-galeria .card-6 {
+  justify-self: center;
+  margin-bottom: 5px;
+}
+
+/* Contacto */
+.contacto-index {
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+.contacto-index .titulo-contacto {
+  font-size: 50px;
+  font-family: "oswald";
+  display: flex;
+  justify-content: center;
+}
+.contacto-index .redes-index {
+  display: flex;
+  justify-content: space-around;
+  margin: 60px;
+}
+.contacto-index .redes-index img {
+  width: 60px;
+  height: 60px;
+}
+.contacto-index .form-index {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+.contacto-index .form-index .mapa-contacto {
+  width: 600px;
+  height: 450px;
+}
+.contacto-index .form-index .formulario-contacto {
+  display: flex;
+  flex-direction: column;
+}
+.contacto-index .form-index .formulario-contacto .boton-form {
+  color: #FCF2FB;
+  background-color: #0f9ac0; /*#26537e*/
+  border: #0f9ac0;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-contacto .contenedor-contacto .titulo-contacto {
+  font-size: 50px;
+  font-family: "oswald";
+  display: flex;
+  justify-content: center;
+}
+.main-contacto .contenedor-contacto .redes-index {
+  display: flex;
+  justify-content: space-around;
+  margin: 60px;
+}
+.main-contacto .contenedor-contacto .redes-index img {
+  width: 60px;
+  height: 60px;
+}
+.main-contacto .contenedor-contacto .form-index {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+.main-contacto .contenedor-contacto .form-index .mapa-contacto {
+  width: 600px;
+  height: 450px;
+}
+.main-contacto .contenedor-contacto .form-index .formulario-contacto {
+  display: flex;
+  flex-direction: column;
+}
+.main-contacto .contenedor-contacto .form-index .formulario-contacto .boton-form {
+  color: #FAFAFA;
+  background-color: #0f9ac0;
+  /*#26537e*/
+  border: #0f9ac0;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #32A6D5;
+  padding-top: 10px;
+}
+footer p {
+  color: #FAFAFA;
+  font-size: 20px;
+  font-family: "semibold";
+  display: flex;
+}
+
+.footer-contacto {
+  display: flex;
+  margin-top: 100px;
+}
+
+.footer-aboutus {
+  display: flex;
+  padding-top: 10px;
+}
+
+.footer-productos {
+  display: flex;
+  padding-top: 10px;
+}
+
+@media (max-width: 550px) {
+  /* Quitar algunos margin - Ver */
+  /*Header-Nav*/
+  .header-index {
+    margin-bottom: 40px;
+    background-color: #485da1;
+    /* #07143F */
+  }
+  .navbar {
+    width: 90%;
+  }
+  .navbar-nav {
+    flex-direction: column;
+  }
+  .logo-mundografico {
+    width: 40px;
+    height: 40px;
+  }
+  .icono-wsapp1 {
+    display: none;
+  }
+  /*Grilla*/
+  .section-presentacion-grilla {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "presentacion" "carousel";
+    margin-bottom: 125px;
+  }
+  .presentacion {
+    grid-column: auto;
+    grid-row: auto;
+    width: 80%;
+    /*height: auto;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titulo-main {
+    font-size: 50px;
+    justify-content: flex-start;
+  }
+  .subt-main {
+    font-size: 25px;
+    margin-left: -30px;
+  }
+  .presentacion img {
+    width: 70%;
+    height: auto;
+  }
+  .carousel-inner {
+    width: 80%;
+    height: auto;
+    margin-left: 10px;
+  }
+  .carousel {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  /* Sobre Nosotros */
+  .sobre-nosotros-index {
+    background-color: #485da1;
+    /*#26537e*/
+    flex-direction: column;
+  }
+  .sobre-nosotros-1 {
+    background-color: #485da1;
+    /*#26537e*/
+    flex-direction: column;
+    margin-bottom: 283px;
+  }
+  .titulo-nosotros {
+    font-size: 35px;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+  .parrafo-nosotros {
+    font-size: 25px;
+  }
+  /* Galeria */
+  .titulo-galeria {
+    font-size: 35px;
+  }
+  .grilla-galeria {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    margin-top: 100px;
+  }
+  .grilla-galeria img {
+    width: 380px;
+    height: 450px;
+  }
+  /* Productos */
+  .contenedor-prod {
+    flex-direction: column;
+  }
+  .tarjeta-sinbordes-index {
+    justify-content: center;
+    border: none;
+    border-radius: none;
+    align-items: center;
+  }
+  .tarjeta-sinbordes-index img {
+    width: 80%;
+    height: auto;
+  }
+  .titulo-producto {
+    font-size: 40px;
+  }
+  .card-productos {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .card-productos img {
+    width: 90%;
+    height: auto;
+  }
+  .card-prod p {
+    width: 100%;
+  }
+  .card-prod {
+    width: 80%;
+    height: auto;
+  }
+  .p-5 {
+    width: 60%;
+    height: auto;
+  }
+  .p-6 {
+    width: 60%;
+    height: auto;
+  }
+  /*Contacto*/
+  .contacto-index {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .form-index {
+    flex-direction: column;
+  }
+  .titulo-contacto {
+    font-size: 25px;
+    font-family: "oswald";
+    display: flex;
+    justify-content: center;
+  }
+  .redes-index img {
+    width: 40px;
+    height: 40px;
+  }
+  .mapa-contacto {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .formulario-contacto {
+    width: 80%;
+    display: flex;
+    align-self: center;
+  }
+  .boton-form {
+    background-color: #485da1;
+    /*#26537e*/
+    border: #485da1;
+  }
+  /*Footer*/
+  footer {
+    background-color: #485da1;
+  }
+  .footer-contacto {
+    background-color: #485da1;
+  }
+  .footer-aboutus {
+    background-color: #485da1;
+  }
+  .footer-productos {
+    background-color: #485da1;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,29 @@
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #32A6D5;
+    padding-top: 10px;
+
+    p {
+        color: #FAFAFA;
+        font-size: 20px;
+        font-family: map-get($fuentes, titulos-productos);
+        display: flex;
+    }
+}
+
+.footer-contacto {
+    display: flex;
+    margin-top: 100px;
+}
+
+.footer-aboutus {
+    display: flex;
+    padding-top: 10px;
+}
+
+.footer-productos {
+    display: flex;
+    padding-top: 10px;
+}

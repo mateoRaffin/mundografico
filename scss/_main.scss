@@ -1,0 +1,44 @@
+/* Main - Grilla */
+.main-index {
+    .section-presentacion-grilla {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 200px);
+        grid-template-areas: "presentacion carousel";
+        margin-bottom: 125px;
+        .presentacion {
+            grid-area: presentacion;
+            grid-column: 1 / 2;
+            grid-row: 1 / 4;
+            justify-self: center;
+
+            .titulo-main {
+                font-size: 70px;
+                font-family: map-get($fuentes, titulos);
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+
+            .subt-main {
+                font-size: 45px;
+                font-family: map-get($fuentes, subtitulos-parrafos);
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            img {
+                width: 80%;
+                height: 350px;
+            }
+        }
+        .carousel {
+            grid-area: carousel;
+            grid-column: 2/3;
+            grid-row: 1/4;
+            display: flex;
+            margin-right: 10px;
+        }
+    }
+}
