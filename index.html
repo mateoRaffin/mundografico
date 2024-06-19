@@ -10,7 +10,8 @@
     <!-- Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -55,45 +56,77 @@
     <main class="main-index">
         <section class="section-presentacion-grilla">
             <div class="presentacion">
-                <h1 class="titulo-main">Mundo Gráfico</h1>
-                <h2 class="subt-main">Más de 20 años de Experiencia</h2>
-                <img src="./multimedia/img/mg+norte.jpg" alt="Logo Mundo Gráfico">
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1s">
+                    <h1 class="titulo-main">Mundo Gráfico</h1>
+                    <h2 class="subt-main">Más de 20 años de Experiencia</h2>
+                </div>
+                <div data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1s">
+                    <img src="./multimedia/img/mg+norte.jpg" alt="Logo Mundo Gráfico">
+                </div>
             </div>
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./multimedia/img/productos/buzo-lolabunny.jpeg" class="d-block w-100"
-                            alt="Buzo Lola Bunny">
+                            alt="Buzo estampa de Lola Bunny">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./multimedia/img/productos/etiquetas-adhesivas-raffindeco.jpeg" class="d-block w-100"
+                            alt="Etiquetas Home-Deco Raffin">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./multimedia/img/productos/stickers-buenasemilla.jpeg" class="d-block w-100"
+                            alt="stickers de Buena semilla alimentos">
                     </div>
                     <div class="carousel-item">
                         <img src="./multimedia/img/productos/tazas-pinguino1.jpeg" class="d-block w-100"
                             alt="Tazas personalizadas">
                     </div>
                     <div class="carousel-item">
-                        <img src="./multimedia/img/productos/cupones-arriero.jpeg" class="d-block w-100"
-                            alt="Cupones El Arriero">
+                        <img src="./multimedia/img/productos/buzo-bugsbunny.jpeg" class="d-block w-100"
+                            alt="Buzo estampa de Bugs Bunny">
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
-<!-- Sobre Nosotros -->
+        <!-- Sobre Nosotros -->
         <section class="sobre-nosotros-index">
             <h2 class="titulo-nosotros">Sobre Nosotros</h2>
             <p class="parrafo-nosotros">Nuestro compromiso con la excelencia y la atención al detalle nos ha convertido
                 en un socio confiable y
                 respetado en la industria de las artes gráficas.</p>
         </section>
-<!-- Productos -->
+        <!-- Productos -->
         <section class="productos-index">
             <div class="contenedor-prod">
-                <div class="tarjeta-sinbordes-index"><img src="./multimedia/img/productos/almanaque-granjadelpollo.jpeg" alt="Almanaques">
+                <div class="tarjeta-sinbordes-index">
+                    <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="2s"><img
+                            src="./multimedia/img/productos/almanaque-granjadelpollo.jpeg" alt="Almanaques">
+                    </div>
                 </div>
-                <div class="tarjeta-sinbordes-index"><img src="./multimedia/img/productos/punaxa4sinfondo.png" alt="Resmas"></div>
-                <div class="tarjeta-sinbordes-index"><img src="./multimedia/img/productos/delantal-corazones.jpeg"
-                        alt="Delantales personalizados"></div>
+                <div class="tarjeta-sinbordes-index">
+                    <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="2s"><img
+                            src="./multimedia/img/productos/punaxa4sinfondo.png" alt="Resmas">
+                    </div>
+                </div>
+                <div class="tarjeta-sinbordes-index">
+                    <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="2s"><img
+                            src="./multimedia/img/productos/delantal-corazones.jpeg" alt="Delantales personalizados">
+                    </div>
+                </div>
             </div>
         </section>
-<!-- Contacto -->
+        <!-- Contacto -->
         <section class="contacto-index">
             <h2 class="titulo-contacto">Comunicate con nosotros a través de nuestras redes</h2>
             <div class="redes-index">
@@ -128,6 +161,12 @@
     <footer>
         <p>2024 Todos los derechos reservados - Raffin Mateo</p>
     </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

@@ -66,6 +66,10 @@ Otro color,borde,boton #32A6D5*/
 }
 
 /* Main - Grilla */
+.main-index {
+  margin-top: 200px;
+  overflow: hidden;
+}
 .main-index .section-presentacion-grilla {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -80,16 +84,17 @@ Otro color,borde,boton #32A6D5*/
   justify-self: center;
 }
 .main-index .section-presentacion-grilla .presentacion .titulo-main {
-  font-size: 70px;
+  font-size: 55px;
   font-family: "oswald";
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 .main-index .section-presentacion-grilla .presentacion .subt-main {
-  font-size: 45px;
+  font-size: 30px;
   font-family: "oswaldreg";
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -115,18 +120,21 @@ Otro color,borde,boton #32A6D5*/
 }
 .sobre-nosotros-index .titulo-nosotros {
   color: #FAFAFA;
-  font-size: 50px;
+  font-size: 40px;
   font-family: "oswald";
   display: flex;
   justify-content: center;
   margin-bottom: 70px;
 }
 .sobre-nosotros-index .parrafo-nosotros {
-  font-size: 35px;
+  font-size: 30px;
   color: #FAFAFA;
   font-family: "oswaldreg";
 }
 
+.main-sobre-nosotros {
+  overflow: hidden;
+}
 .main-sobre-nosotros .sobre-nosotros-1 {
   background-color: #0f9ac0;
   /*#26537e*/
@@ -166,86 +174,169 @@ Otro color,borde,boton #32A6D5*/
 }
 
 .main-productos {
+  margin-top: 250px;
   margin-bottom: 150px;
+  overflow: hidden;
 }
 .main-productos .titulo-producto {
+  margin-top: 100px;
+  margin-bottom: 100px;
   display: flex;
   justify-content: center;
-  font-size: 50px;
-  font-family: "oswald";
-  margin-bottom: 150px;
+  font-size: 40px;
+  font-family: "oswaldreg";
+  margin-bottom: 350px;
+}
+.main-productos .separador-productos {
+  height: 1px;
+  width: 70%;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
 }
 .main-productos .card-productos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(10, 1fr);
+  margin-top: 50px;
+}
+.main-productos .card-productos .productoanimado-right {
+  display: grid;
+  grid-column: 1/3;
+}
+.main-productos .card-productos .productoanimado-left {
+  display: grid;
+  grid-column: 1/3;
 }
 .main-productos .card-productos .card-prod {
-  width: 100%;
+  width: 50%;
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  justify-self: center;
 }
 .main-productos .card-productos .card-prod p {
   width: 100%;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
-  font-family: "semibold";
+  font-family: "oswaldreg";
   font-size: 25px;
 }
 .main-productos .card-productos .card-prod img {
-  width: 90%;
+  width: 50%;
+  height: auto;
+}
+.main-productos .card-productos .p-1 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.main-productos .card-productos .p-2 {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+.main-productos .card-productos .p-3 {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  margin-bottom: 80px;
+}
+.main-productos .card-productos .p-4 {
+  grid-column: 1/3;
+  grid-row: 4/5;
 }
 .main-productos .card-productos .p-5 {
-  width: 800px;
-  height: 800px;
+  grid-column: 1/3;
+  grid-row: 5/6;
 }
 .main-productos .card-productos .p-6 {
-  width: 450px;
-  height: 800px;
+  grid-column: 1/3;
+  grid-row: 6/7;
+}
+.main-productos .card-productos .p-6 img {
+  width: 40%;
+}
+.main-productos .card-productos .p-7 {
+  grid-column: 1/3;
+  grid-row: 7/8;
+  margin-bottom: -180px;
+}
+.main-productos .card-productos .p-7 img {
+  transform: rotate(270deg);
+}
+.main-productos .card-productos .p-8 {
+  grid-column: 1/3;
+  grid-row: 8/9;
+}
+.main-productos .card-productos .p-9 {
+  grid-column: 1/3;
+  grid-row: 9/10;
+  margin-bottom: 100px;
+}
+.main-productos .card-productos .p-10 {
+  grid-column: 1/3;
+  grid-row: 10/11;
+  margin-bottom: 50px;
 }
 
 /* Galeria */
+.main-galeria {
+  margin-top: 250px;
+  margin-bottom: 150px;
+  overflow: hidden;
+}
 .main-galeria .titulo-galeria {
-  font-size: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-size: 40px;
   display: flex;
   justify-content: center;
-  font-family: "oswald";
+  font-family: "oswaldreg";
+  margin-bottom: 350px;
+}
+.main-galeria .separador-galeria {
+  height: 1px;
+  width: 70%;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
 }
 .main-galeria .grilla-galeria {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  margin-top: 100px;
+  grid-template-rows: repeat(2, 1fr);
+  margin-top: 50px;
 }
 .main-galeria .grilla-galeria img {
-  width: 380px;
-  height: 450px;
+  width: 100%;
+  height: 350px;
 }
 .main-galeria .grilla-galeria .card-1 {
   justify-self: center;
-  margin-bottom: 5px;
+  margin-top: 100px;
+  margin-bottom: 80px;
 }
 .main-galeria .grilla-galeria .card-2 {
   justify-self: center;
-  margin-bottom: 5px;
+  margin-top: 100px;
+  margin-bottom: 80px;
 }
 .main-galeria .grilla-galeria .card-3 {
   justify-self: center;
-  margin-bottom: 5px;
+  margin-top: 100px;
+  margin-bottom: 80px;
 }
 .main-galeria .grilla-galeria .card-4 {
   justify-self: center;
-  margin-bottom: 5px;
 }
 .main-galeria .grilla-galeria .card-5 {
   justify-self: center;
-  margin-bottom: 5px;
 }
 .main-galeria .grilla-galeria .card-6 {
   justify-self: center;
-  margin-bottom: 5px;
 }
 
 /* Contacto */
@@ -254,7 +345,7 @@ Otro color,borde,boton #32A6D5*/
   margin-bottom: 100px;
 }
 .contacto-index .titulo-contacto {
-  font-size: 50px;
+  font-size: 40px;
   font-family: "oswald";
   display: flex;
   justify-content: center;
@@ -288,8 +379,11 @@ Otro color,borde,boton #32A6D5*/
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.main-contacto {
+  overflow: hidden;
+}
 .main-contacto .contenedor-contacto .titulo-contacto {
-  font-size: 50px;
+  font-size: 40px;
   font-family: "oswald";
   display: flex;
   justify-content: center;
@@ -297,11 +391,11 @@ Otro color,borde,boton #32A6D5*/
 .main-contacto .contenedor-contacto .redes-index {
   display: flex;
   justify-content: space-around;
-  margin: 60px;
+  margin: 100px;
 }
 .main-contacto .contenedor-contacto .redes-index img {
-  width: 60px;
-  height: 60px;
+  width: 100%;
+  height: 50px;
 }
 .main-contacto .contenedor-contacto .form-index {
   display: flex;

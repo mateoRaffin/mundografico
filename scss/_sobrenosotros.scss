@@ -8,7 +8,7 @@
 
     .titulo-nosotros {
         color: $color-texto;
-        font-size: 50px;
+        font-size: 40px;
         font-family: map-get($fuentes, titulos);
         display: flex;
         justify-content: center;
@@ -16,13 +16,15 @@
     }
 
     .parrafo-nosotros {
-        font-size: 35px;
+        font-size: 30px;
         color: $color-texto;
         font-family: map-get($fuentes, subtitulos-parrafos);
     }
 }
 
 .main-sobre-nosotros {
+    overflow: hidden;
+    
     .sobre-nosotros-1 {
         background-color: $color-fondo;
         /*#26537e*/

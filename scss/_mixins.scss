@@ -1,0 +1,7 @@
+@mixin tarjetas($alto, $ancho){
+    height: $alto;
+    width: $ancho;
+    justify-self: center;
+    margin-bottom: 10px;
+}
+/* Para usar como en galería */

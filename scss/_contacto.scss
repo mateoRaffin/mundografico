@@ -4,7 +4,7 @@
     margin-bottom: 100px;
 
     .titulo-contacto {
-        font-size: 50px;
+        font-size: 40px;
         font-family: map-get($fuentes, titulos);
         display: flex;
         justify-content: center;
@@ -46,9 +46,11 @@
 }
 
 .main-contacto {
+    overflow: hidden;
+
     .contenedor-contacto {
         .titulo-contacto {
-            font-size: 50px;
+            font-size: 40px;
             font-family: map-get($fuentes, titulos);
             display: flex;
             justify-content: center;
@@ -57,11 +59,11 @@
         .redes-index {
             display: flex;
             justify-content: space-around;
-            margin: 60px;
+            margin: 100px;
 
             img {
-                width: 60px;
-                height: 60px;
+                width: 100%;
+                height: 50px;
             }
         }
 

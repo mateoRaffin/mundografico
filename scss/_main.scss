@@ -1,5 +1,8 @@
 /* Main - Grilla */
 .main-index {
+    margin-top: 200px;
+    overflow: hidden;
+
     .section-presentacion-grilla {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -13,7 +16,7 @@
             justify-self: center;
 
             .titulo-main {
-                font-size: 70px;
+                font-size: 55px;
                 font-family: map-get($fuentes, titulos);
                 display: flex;
                 justify-content: center;
@@ -21,9 +24,10 @@
             }
 
             .subt-main {
-                font-size: 45px;
+                font-size: 30px;
                 font-family: map-get($fuentes, subtitulos-parrafos);
                 display: flex;
+                justify-content: center;
                 align-items: center;
                 margin-bottom: 20px;
             }
