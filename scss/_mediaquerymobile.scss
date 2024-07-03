@@ -83,7 +83,7 @@
                 justify-content: center;
                 align-items: center;
                 .carousel-inner {
-                    width: 90%;
+                    width: 95%;
                     justify-content: center;
                     align-items: center;
                     .carousel-item {
@@ -243,7 +243,7 @@
             }
         }
     }
-    
+
     /* Nuestra mision */
     .nuestra-mision-index {
         background-color: $mobile-color-fondo; /*#26537e*/
@@ -274,7 +274,7 @@
         }
 
         .redes-index {
-            justify-content: space-evenly;
+            justify-content: space-between;
             img {
                 width: 40px;
                 height: 40px;
@@ -286,13 +286,13 @@
             align-items: center;
             width: 100%;
             .mapa-contacto {
-                width: 70%;
+                width: 90%;
                 height: 300px;
                 margin-bottom: 50px;
             }
 
             .formulario-contacto {
-                width: 70%;
+                width: 90%;
                 display: flex;
                 align-self: center;
 
@@ -323,7 +323,7 @@
             }
 
             .redes-contacto {
-                justify-content: space-evenly;
+                justify-content: space-between;
 
                 img {
                     width: 30px;
@@ -347,7 +347,7 @@
                     display: flex;
                     justify-content: center;
                     .formulario-contacto {
-                        width: 90%;
+                        width: 100%;
                         display: flex;
                         align-self: center;
 
