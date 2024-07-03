@@ -36,7 +36,7 @@
             width: 35%;
             height: 40%;
             padding: 5px;
-            background-color: white;
+            background-color: $color-texto;
             color: #999;
             border-radius: 3px;
             box-shadow: 0 5px 15px;
@@ -59,7 +59,7 @@
             }
 
             .boton-form {
-                color: $color-enviar;
+                color: $color-texto;
                 background-color: $color-fondo;
                 padding: 2px;
             }
@@ -114,7 +114,7 @@
                 width: 30%;
                 .formulario-contacto {
                     padding: 5px;
-                    background-color: white;
+                    background-color: $color-texto;
                     color: #999;
                     border-radius: 3px;
                     box-shadow: 0 5px 15px;
@@ -133,7 +133,7 @@
                         border-color: $color-fondo;
                     }
                     .boton-form {
-                        color: $color-enviar;
+                        color: $color-texto;
                         background-color: $color-fondo;
                         padding: 2px;
                     }

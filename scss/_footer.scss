@@ -6,7 +6,7 @@ footer {
     padding-top: 10px;
 
     p {
-        color: #FAFAFA;
+        color: $color-texto;
         font-size: 20px;
         font-family: map-get($fuentes, titulos-productos);
         display: flex;

@@ -18,9 +18,6 @@
   font-family: "oswaldreg";
   src: url(../fonts/Oswald/static/Oswald-Regular.ttf);
 }
-/*$fuente
-  $color-secundario
-Otro color,borde,boton #32A6D5*/
 * {
   margin: 0;
   padding: 0;
@@ -323,6 +320,7 @@ Otro color,borde,boton #32A6D5*/
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 .main-galeria .grilla-galeria .card-gal img {
   width: 70%;
@@ -375,7 +373,7 @@ Otro color,borde,boton #32A6D5*/
   width: 35%;
   height: 40%;
   padding: 5px;
-  background-color: white;
+  background-color: #FAFAFA;
   color: #999;
   border-radius: 3px;
   box-shadow: 0 5px 15px;
@@ -395,7 +393,7 @@ Otro color,borde,boton #32A6D5*/
   border-color: #0f9ac0;
 }
 .contacto-index .form-index .formulario-contacto .boton-form {
-  color: #FCF2FB;
+  color: #FAFAFA;
   background-color: #0f9ac0;
   padding: 2px;
 }
@@ -447,7 +445,7 @@ Otro color,borde,boton #32A6D5*/
 }
 .main-contacto .contenedor-contacto .form-contacto .animacion-contacto .formulario-contacto {
   padding: 5px;
-  background-color: white;
+  background-color: #FAFAFA;
   color: #999;
   border-radius: 3px;
   box-shadow: 0 5px 15px;
@@ -466,7 +464,7 @@ Otro color,borde,boton #32A6D5*/
   border-color: #0f9ac0;
 }
 .main-contacto .contenedor-contacto .form-contacto .animacion-contacto .formulario-contacto .boton-form {
-  color: #FCF2FB;
+  color: #FAFAFA;
   background-color: #0f9ac0;
   padding: 2px;
 }
@@ -509,8 +507,7 @@ footer p {
     margin-bottom: 20px;
     width: 100%;
     height: auto;
-    background-color: #485DA1;
-    /* #07143F - #485DA1 */
+    background-color: #485DA1; /* #07143F - #485DA1 */
   }
   .header-index .navbar {
     width: 100%;
@@ -534,14 +531,14 @@ footer p {
     border: none;
   }
   .header-index .navbar .container-fluid .collapse .navbar-nav .nav-item a {
-    color: whitesmoke;
+    color: #FAFAFA;
   }
   /*Grilla*/
   .main-index .section-presentacion-grilla {
     display: flex;
     flex-direction: column;
     grid-template-columns: 1fr;
-    grid-template-rows: 300px;
+    grid-template-rows: auto;
     grid-template-areas: "presentacion" "carousel";
     margin-bottom: 100px;
   }
@@ -549,7 +546,6 @@ footer p {
     grid-column: auto;
     grid-row: auto;
     width: 100%;
-    height: auto;
     justify-content: center;
     align-items: center;
   }
@@ -559,28 +555,31 @@ footer p {
   }
   .main-index .section-presentacion-grilla .presentacion .subt-main {
     font-size: 35px;
+    text-align: center;
   }
   .main-index .section-presentacion-grilla .presentacion img {
     width: 100%;
     height: auto;
   }
-  .main-index .section-presentacion-grilla .presentacion .carousel {
-    display: flex;
+  .main-index .section-presentacion-grilla .carousel {
     grid-column: auto;
-    grid-row: auto;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .main-index .section-presentacion-grilla .presentacion .carousel .carousel-inner {
-    width: 100%;
-    height: auto;
+  .main-index .section-presentacion-grilla .carousel .carousel-inner {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
   }
-  .main-index .section-presentacion-grilla .presentacion .carousel .carousel-inner .carousel-item img {
+  .main-index .section-presentacion-grilla .carousel .carousel-inner .carousel-item img {
     width: 100%;
-    height: 350px;
+    height: 50%;
   }
   /* Sobre Nosotros */
   .sobre-nosotros-index {
-    background-color: #485da1; /*#26537e*/
+    background-color: #485DA1; /*#26537e*/
     flex-direction: column;
   }
   .sobre-nosotros-index .titulo-nosotros {
@@ -600,7 +599,7 @@ footer p {
     display: flex;
   }
   .main-sobre-nosotros .sobre-nosotros-1 {
-    background-color: #485da1; /*#26537e*/
+    background-color: #485DA1; /*#26537e*/
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -618,7 +617,7 @@ footer p {
   }
   /* Galeria */
   .main-galeria {
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 50px;
   }
   .main-galeria .titulo-galeria {
@@ -634,6 +633,7 @@ footer p {
   .main-galeria .grilla-galeria .card-gal {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
   }
   .main-galeria .grilla-galeria img {
     width: 70%;
@@ -662,7 +662,7 @@ footer p {
     height: auto;
   }
   .main-productos {
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 50px;
   }
   .main-productos .titulo-producto {
@@ -712,6 +712,7 @@ footer p {
   .contacto-index .titulo-contacto {
     font-size: 25px;
     justify-content: center;
+    text-align: center;
   }
   .contacto-index .redes-index {
     justify-content: space-evenly;
@@ -723,21 +724,22 @@ footer p {
   .contacto-index .form-index {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   .contacto-index .form-index .mapa-contacto {
-    width: 90%;
+    width: 70%;
     height: 300px;
     margin-bottom: 50px;
   }
   .contacto-index .form-index .formulario-contacto {
-    width: 90%;
+    width: 70%;
     display: flex;
     align-self: center;
   }
   .contacto-index .form-index .formulario-contacto .boton-form {
-    background-color: #485da1;
-    /*#26537e*/
-    border: #485da1;
+    background-color: #485DA1; /*#26537e*/
+    border: #485DA1;
+    color: #FAFAFA;
   }
   .main-contacto {
     width: 100%;
@@ -747,6 +749,7 @@ footer p {
     flex-direction: column;
   }
   .main-contacto .contenedor-contacto {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -764,7 +767,7 @@ footer p {
   .main-contacto .contenedor-contacto .form-contacto {
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 90%;
     height: auto;
   }
   .main-contacto .contenedor-contacto .form-contacto .mapa-contacto {
@@ -774,28 +777,29 @@ footer p {
   }
   .main-contacto .contenedor-contacto .form-contacto .animacion-contacto {
     width: 90%;
+    height: 420px;
     display: flex;
     justify-content: center;
   }
   .main-contacto .contenedor-contacto .form-contacto .animacion-contacto .formulario-contacto {
-    width: 80%;
+    width: 90%;
     display: flex;
     align-self: center;
   }
   .main-contacto .contenedor-contacto .form-contacto .animacion-contacto .formulario-contacto .boton-form {
-    background-color: #485da1;
-    /*#26537e*/
-    border: #485da1;
+    background-color: #485DA1; /*#26537e*/
+    border: #485DA1;
+    color: #FAFAFA;
   }
   /*Footer*/
   footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #485da1;
+    background-color: #485DA1;
   }
   footer p {
-    color: whitesmoke;
+    color: #FAFAFA;
     font-size: 15px;
     text-align: justify;
   }
@@ -803,10 +807,10 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #485da1;
+    background-color: #485DA1;
   }
   .footer-contacto p {
-    color: whitesmoke;
+    color: #FAFAFA;
     font-size: 15px;
     text-align: justify;
   }
@@ -814,10 +818,10 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #485da1;
+    background-color: #485DA1;
   }
   .footer-galeria p {
-    color: whitesmoke;
+    color: #FAFAFA;
     font-size: 15px;
     text-align: justify;
   }
@@ -825,10 +829,10 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #485da1;
+    background-color: #485DA1;
   }
   .footer-productos p {
-    color: whitesmoke;
+    color: #FAFAFA;
     font-size: 15px;
     text-align: justify;
   }
@@ -836,10 +840,357 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #485da1;
+    background-color: #485DA1;
   }
   .footer-aboutus p {
-    color: whitesmoke;
+    color: #FAFAFA;
+    font-size: 15px;
+    text-align: justify;
+  }
+}
+@media (min-width: 551px) and (max-width: 1199px) {
+  /*Header-Nav*/
+  .header-index {
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    background-color: #485DA1; /* #07143F - #485DA1 */
+  }
+  .header-index .navbar {
+    width: 100%;
+    height: auto;
+  }
+  .header-index .navbar .container-fluid {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .header-index .navbar .container-fluid .navbar-brand {
+    display: flex;
+  }
+  .header-index .navbar .container-fluid .navbar-brand .logo-mundografico {
+    width: 40px;
+    height: 40px;
+  }
+  .header-index .navbar .container-fluid .icono-wsapp1 {
+    display: none;
+  }
+  .header-index .navbar .container-fluid .navbar-toggler {
+    border: none;
+  }
+  .header-index .navbar .container-fluid .collapse .navbar-nav .nav-item a {
+    color: #FAFAFA;
+  }
+  /*Grilla*/
+  .main-index .section-presentacion-grilla {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "presentacion" "carousel";
+    margin-bottom: 100px;
+  }
+  .main-index .section-presentacion-grilla .presentacion {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-index .section-presentacion-grilla .presentacion .titulo-main {
+    font-size: 45px;
+    justify-content: center;
+  }
+  .main-index .section-presentacion-grilla .presentacion .subt-main {
+    font-size: 35px;
+    text-align: center;
+  }
+  .main-index .section-presentacion-grilla .presentacion img {
+    width: 100%;
+    height: auto;
+  }
+  .main-index .section-presentacion-grilla .carousel {
+    grid-column: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-index .section-presentacion-grilla .carousel .carousel-inner {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-index .section-presentacion-grilla .carousel .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 50%;
+  }
+  /* Sobre Nosotros */
+  .sobre-nosotros-index {
+    background-color: #485DA1; /*#26537e*/
+    flex-direction: column;
+  }
+  .sobre-nosotros-index .titulo-nosotros {
+    font-size: 35px;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+  .sobre-nosotros-index .parrafo-nosotros {
+    font-size: 25px;
+    justify-content: center;
+    text-align: justify;
+  }
+  .main-sobre-nosotros {
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  .main-sobre-nosotros .sobre-nosotros-1 {
+    background-color: #485DA1; /*#26537e*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .main-sobre-nosotros .sobre-nosotros-1 .titulo-nosotros {
+    font-size: 30px;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+  .main-sobre-nosotros .sobre-nosotros-1 .parrafo-nosotros {
+    font-size: 25px;
+    justify-content: center;
+    text-align: justify;
+  }
+  /* Galeria */
+  .main-galeria {
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+  .main-galeria .titulo-galeria {
+    margin-top: 120px;
+    margin-bottom: 150px;
+    font-size: 35px;
+  }
+  .main-galeria .grilla-galeria {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin-top: 100px;
+  }
+  .main-galeria .grilla-galeria .card-gal {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .main-galeria .grilla-galeria img {
+    width: 70%;
+    height: auto;
+  }
+  /* Productos */
+  .productos-index {
+    display: flex;
+    align-items: center;
+  }
+  .productos-index .contenedor-prod {
+    flex-direction: column;
+  }
+  .productos-index .contenedor-prod .tarjeta-sinbordes-index {
+    justify-content: center;
+    border: none;
+    border-radius: none;
+    align-items: center;
+  }
+  .productos-index .contenedor-prod .tarjeta-sinbordes-index .producto-animacion-zoom {
+    display: flex;
+    justify-content: center;
+  }
+  .productos-index .contenedor-prod .tarjeta-sinbordes-index .producto-animacion-zoom img {
+    width: 50%;
+    height: auto;
+  }
+  .main-productos {
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+  .main-productos .titulo-producto {
+    margin-top: 120px;
+    margin-bottom: 150px;
+    font-size: 35px;
+  }
+  .main-productos .card-productos {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .main-productos .card-productos .card-prod {
+    width: 80%;
+    height: auto;
+  }
+  .main-productos .card-productos p {
+    width: 100%;
+  }
+  .main-productos .card-productos img {
+    width: 90%;
+    height: auto;
+  }
+  .main-productos .card-productos .p-5 {
+    width: 90%;
+    height: auto;
+  }
+  .main-productos .card-productos .p-6 {
+    width: 60%;
+    height: auto;
+  }
+  .main-productos .card-productos .p-7 {
+    margin-bottom: 1px;
+  }
+  .main-productos .card-productos .p-8 {
+    margin-bottom: 10px;
+  }
+  /*Contacto*/
+  .contacto-index {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .contacto-index .titulo-contacto {
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+  }
+  .contacto-index .redes-index {
+    justify-content: space-evenly;
+  }
+  .contacto-index .redes-index img {
+    width: 40px;
+    height: 40px;
+  }
+  .contacto-index .form-index {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .contacto-index .form-index .mapa-contacto {
+    width: 70%;
+    height: 300px;
+    margin-bottom: 50px;
+  }
+  .contacto-index .form-index .formulario-contacto {
+    width: 70%;
+    display: flex;
+    align-self: center;
+  }
+  .contacto-index .form-index .formulario-contacto .boton-form {
+    background-color: #485DA1; /*#26537e*/
+    border: #485DA1;
+    color: #FAFAFA;
+  }
+  .main-contacto {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-contacto .contenedor-contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-contacto .contenedor-contacto .titulo-contacto {
+    font-size: 30px;
+    text-align: center;
+  }
+  .main-contacto .contenedor-contacto .redes-contacto {
+    justify-content: space-evenly;
+  }
+  .main-contacto .contenedor-contacto .redes-contacto img {
+    width: 30px;
+    height: 30px;
+  }
+  .main-contacto .contenedor-contacto .form-contacto {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: auto;
+  }
+  .main-contacto .contenedor-contacto .form-contacto .mapa-contacto {
+    width: 90%;
+    height: 300px;
+    margin-bottom: 50px;
+  }
+  .main-contacto .contenedor-contacto .form-contacto .animacion-contacto {
+    width: 90%;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+  }
+  .main-contacto .contenedor-contacto .form-contacto .animacion-contacto .formulario-contacto {
+    width: 90%;
+    display: flex;
+    align-self: center;
+  }
+  .main-contacto .contenedor-contacto .form-contacto .animacion-contacto .formulario-contacto .boton-form {
+    background-color: #485DA1; /*#26537e*/
+    border: #485DA1;
+    color: #FAFAFA;
+  }
+  /*Footer*/
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #485DA1;
+  }
+  footer p {
+    color: #FAFAFA;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .footer-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #485DA1;
+  }
+  .footer-contacto p {
+    color: #FAFAFA;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .footer-galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #485DA1;
+  }
+  .footer-galeria p {
+    color: #FAFAFA;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .footer-productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #485DA1;
+  }
+  .footer-productos p {
+    color: #FAFAFA;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .footer-aboutus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #485DA1;
+  }
+  .footer-aboutus p {
+    color: #FAFAFA;
     font-size: 15px;
     text-align: justify;
   }

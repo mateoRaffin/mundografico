@@ -4,9 +4,7 @@
         margin-bottom: 20px;
         width: 100%;
         height: auto;
-        background-color: #485DA1;
-
-        /* #07143F - #485DA1 */
+        background-color: $mobile-color-fondo; /* #07143F - #485DA1 */
         .navbar {
             width: 100%;
             height: auto;
@@ -36,7 +34,7 @@
                     .navbar-nav {
                         .nav-item {
                             a {
-                                color: whitesmoke;
+                                color: $color-texto;
                             }
                         }
                     }
@@ -51,7 +49,7 @@
             display: flex;
             flex-direction: column;
             grid-template-columns: 1fr;
-            grid-template-rows: 300px;
+            grid-template-rows: auto;
             grid-template-areas:
                 "presentacion"
                 "carousel";
@@ -61,54 +59,47 @@
                 grid-column: auto;
                 grid-row: auto;
                 width: 100%;
-                height: auto;
                 justify-content: center;
                 align-items: center;
-
                 .titulo-main {
                     font-size: 45px;
                     justify-content: center;
                 }
                 .subt-main {
                     font-size: 35px;
-                    justify-content: center;
+                    text-align: center;
                 }
 
                 img {
                     width: 100%;
                     height: auto;
                 }
+            }
 
-                .carousel {
-                    display: flex;
-                    grid-column: auto;
-                    grid-row: auto;
-                    width: 100%;
+            .carousel {
+                grid-column: auto;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .carousel-inner {
+                    width: 90%;
                     justify-content: center;
                     align-items: center;
-                    .carousel-inner {
-                        width: 100%;
-                        height: auto;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        .carousel-item {
-                            justify-content: center;
-                            align-items: center;
-                            img {
-                                width: 100%;
-                                height: auto;
-                            }
+                    .carousel-item {
+                        img {
+                            width: 100%;
+                            height: 50%;
                         }
                     }
                 }
-            }
+            } 
         }
     }
 
     /* Sobre Nosotros */
     .sobre-nosotros-index {
-        background-color: #485da1; /*#26537e*/
+        background-color: $mobile-color-fondo; /*#26537e*/
         flex-direction: column;
         .titulo-nosotros {
             font-size: 35px;
@@ -128,7 +119,7 @@
         height: auto;
         display: flex;
         .sobre-nosotros-1 {
-            background-color: #485da1; /*#26537e*/
+            background-color: $mobile-color-fondo; /*#26537e*/
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -148,7 +139,7 @@
 
     /* Galeria */
     .main-galeria {
-        margin-top: 50px;
+        margin-top: 70px;
         margin-bottom: 50px;
 
         .titulo-galeria {
@@ -165,6 +156,7 @@
             .card-gal {
                 display: flex;
                 justify-content: center;
+                margin-bottom: 20px;
             }
 
             img {
@@ -202,7 +194,7 @@
     }
 
     .main-productos {
-        margin-top: 50px;
+        margin-top: 70px;
         margin-bottom: 50px;
 
         .titulo-producto {
@@ -276,7 +268,7 @@
         .form-index {
             flex-direction: column;
             align-items: center;
-
+            width: 100%;
             .mapa-contacto {
                 width: 70%;
                 height: 300px;
@@ -289,9 +281,9 @@
                 align-self: center;
 
                 .boton-form {
-                    background-color: #485da1;
-                    /*#26537e*/
-                    border: #485da1;
+                    background-color: $mobile-color-fondo; /*#26537e*/
+                    border: $mobile-color-fondo;
+                    color: $color-texto;
                 }
             }
         }
@@ -305,6 +297,7 @@
         flex-direction: column;
 
         .contenedor-contacto {
+            width: 100%;
             display: flex;
             flex-direction: column;
 
@@ -325,7 +318,7 @@
             .form-contacto {
                 flex-direction: column;
                 align-items: center;
-                width: 100%;
+                width: 90%;
                 height: auto;
                 .mapa-contacto {
                     width: 90%;
@@ -343,9 +336,9 @@
                         align-self: center;
 
                         .boton-form {
-                            background-color: #485da1;
-                            /*#26537e*/
-                            border: #485da1;
+                            background-color: $mobile-color-fondo; /*#26537e*/
+                            border: $mobile-color-fondo;
+                            color: $color-texto;
                         }
                     }
                 }
@@ -358,10 +351,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #485da1;
+        background-color: $mobile-color-fondo;
 
         p {
-            color: whitesmoke;
+            color: $color-texto;
             font-size: 15px;
             text-align: justify;
         }
@@ -371,10 +364,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #485da1;
+        background-color: $mobile-color-fondo;
 
         p {
-            color: whitesmoke;
+            color: $color-texto;
             font-size: 15px;
             text-align: justify;
         }
@@ -384,10 +377,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #485da1;
+        background-color: $mobile-color-fondo;
 
         p {
-            color: whitesmoke;
+            color: $color-texto;
             font-size: 15px;
             text-align: justify;
         }
@@ -397,10 +390,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #485da1;
+        background-color: $mobile-color-fondo;
 
         p {
-            color: whitesmoke;
+            color: $color-texto;
             font-size: 15px;
             text-align: justify;
         }
@@ -410,13 +403,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #485da1;
+        background-color: $mobile-color-fondo;
 
         p {
-            color: whitesmoke;
+            color: $color-texto;
             font-size: 15px;
             text-align: justify;
         }
     }
-
 }
