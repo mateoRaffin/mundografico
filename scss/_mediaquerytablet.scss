@@ -244,6 +244,22 @@
         }
     }
 
+    /* Nuestra mision */
+    .nuestra-mision-index {
+        background-color: $mobile-color-fondo; /*#26537e*/
+        flex-direction: column;
+        .titulo-mision {
+            font-size: 35px;
+            justify-content: center;
+            margin-bottom: 70px;
+        }
+        .parrafo-mision {
+            font-size: 25px;
+            justify-content: center;
+            text-align: justify;
+        }
+    }
+
     /*Contacto*/
     .contacto-index {
         display: flex;

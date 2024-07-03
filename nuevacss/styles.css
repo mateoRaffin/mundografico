@@ -75,12 +75,19 @@
 .main-index {
   margin-top: 200px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .main-index .section-presentacion-grilla {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 200px);
   grid-template-areas: "presentacion carousel";
+  width: 95%;
+  height: auto;
   margin-bottom: 125px;
 }
 .main-index .section-presentacion-grilla .presentacion {
@@ -118,11 +125,11 @@
 
 /* Sobre Nosotros */
 .sobre-nosotros-index {
-  background-color: #0f9ac0;
-  /*#26537e*/
-  padding: 5% 5%;
+  background-color: #0f9ac0; /*#26537e*/
+  padding: 2% 2%;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .sobre-nosotros-index .titulo-nosotros {
   color: #FAFAFA;
@@ -135,6 +142,7 @@
 .sobre-nosotros-index .parrafo-nosotros {
   font-size: 30px;
   color: #FAFAFA;
+  text-align: center;
   font-family: "oswaldreg";
 }
 
@@ -142,8 +150,7 @@
   overflow: hidden;
 }
 .main-sobre-nosotros .sobre-nosotros-1 {
-  background-color: #0f9ac0;
-  /*#26537e*/
+  background-color: #0f9ac0; /*#26537e*/
   padding: 5% 5%;
   display: flex;
   flex-direction: column;
@@ -287,6 +294,28 @@
   margin-bottom: 50px;
 }
 
+/* Nuestra mision */
+.nuestra-mision-index {
+  background-color: #0f9ac0; /*#26537e*/
+  padding: 2% 2%;
+  display: flex;
+  flex-direction: column;
+}
+.nuestra-mision-index .titulo-mision {
+  color: #FAFAFA;
+  font-size: 40px;
+  font-family: "oswald";
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+.nuestra-mision-index .parrafo-mision {
+  font-size: 30px;
+  color: #FAFAFA;
+  text-align: center;
+  font-family: "oswaldreg";
+}
+
 /* Galeria */
 .main-galeria {
   margin-top: 250px;
@@ -343,6 +372,8 @@
 .contacto-index {
   margin-top: 200px;
   margin-bottom: 100px;
+  width: 80%;
+  height: auto;
 }
 .contacto-index .titulo-contacto {
   font-size: 40px;
@@ -356,8 +387,8 @@
   margin: 60px;
 }
 .contacto-index .redes-index img {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
 }
 .contacto-index .form-index {
   display: flex;
@@ -379,6 +410,7 @@
   box-shadow: 0 5px 15px;
   display: flex;
   flex-direction: column;
+  align-self: center;
 }
 .contacto-index .form-index .formulario-contacto input,
 .contacto-index .form-index .formulario-contacto textarea {
@@ -425,7 +457,7 @@
 }
 .main-contacto .contenedor-contacto .redes-contacto img {
   width: 100%;
-  height: 50px;
+  height: 40px;
 }
 .main-contacto .contenedor-contacto .form-contacto {
   width: 100%;
@@ -701,6 +733,21 @@ footer p {
   }
   .main-productos .card-productos .p-8 {
     margin-bottom: 10px;
+  }
+  /* Nuestra mision */
+  .nuestra-mision-index {
+    background-color: #485DA1; /*#26537e*/
+    flex-direction: column;
+  }
+  .nuestra-mision-index .titulo-mision {
+    font-size: 35px;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+  .nuestra-mision-index .parrafo-mision {
+    font-size: 25px;
+    justify-content: center;
+    text-align: justify;
   }
   /*Contacto*/
   .contacto-index {
@@ -1048,6 +1095,21 @@ footer p {
   }
   .main-productos .card-productos .p-8 {
     margin-bottom: 10px;
+  }
+  /* Nuestra mision */
+  .nuestra-mision-index {
+    background-color: #485DA1; /*#26537e*/
+    flex-direction: column;
+  }
+  .nuestra-mision-index .titulo-mision {
+    font-size: 35px;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+  .nuestra-mision-index .parrafo-mision {
+    font-size: 25px;
+    justify-content: center;
+    text-align: justify;
   }
   /*Contacto*/
   .contacto-index {

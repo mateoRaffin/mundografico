@@ -1,11 +1,10 @@
 /* Sobre Nosotros */
 .sobre-nosotros-index {
-    background-color: $color-fondo;
-    /*#26537e*/
-    padding: 5% 5%;
+    background-color: $color-fondo; /*#26537e*/
+    padding: 2% 2%;
     display: flex;
     flex-direction: column;
-
+    width: 100%;
     .titulo-nosotros {
         color: $color-texto;
         font-size: 40px;
@@ -18,6 +17,7 @@
     .parrafo-nosotros {
         font-size: 30px;
         color: $color-texto;
+        text-align: center;
         font-family: map-get($fuentes, subtitulos-parrafos);
     }
 }
@@ -26,8 +26,7 @@
     overflow: hidden;
     
     .sobre-nosotros-1 {
-        background-color: $color-fondo;
-        /*#26537e*/
+        background-color: $color-fondo; /*#26537e*/
         padding: 5% 5%;
         display: flex;
         flex-direction: column;

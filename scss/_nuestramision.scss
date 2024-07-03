@@ -1,0 +1,22 @@
+/* Nuestra mision */
+.nuestra-mision-index {
+    background-color: $color-fondo; /*#26537e*/
+    padding: 2% 2%;
+    display: flex;
+    flex-direction: column;
+    .titulo-mision {
+        color: $color-texto;
+        font-size: 40px;
+        font-family: map-get($fuentes, titulos);
+        display: flex;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+
+    .parrafo-mision {
+        font-size: 30px;
+        color: $color-texto;
+        text-align: center;
+        font-family: map-get($fuentes, subtitulos-parrafos);
+    }
+}

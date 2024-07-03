@@ -2,7 +2,8 @@
 .contacto-index {
     margin-top: 200px;
     margin-bottom: 100px;
-
+    width: 80%;
+    height: auto;
     .titulo-contacto {
         font-size: 40px;
         font-family: map-get($fuentes, titulos);
@@ -16,8 +17,8 @@
         margin: 60px;
 
         img {
-            width: 60px;
-            height: 60px;
+            width: 40px;
+            height: 40px;
         }
     }
 
@@ -25,7 +26,6 @@
         display: flex;
         justify-content: space-around;
         align-self: center;
-
         .mapa-contacto {
             width: 600px;
             height: 450px;
@@ -42,7 +42,7 @@
             box-shadow: 0 5px 15px;
             display: flex;
             flex-direction: column;
-
+            align-self: center;
             input,
             textarea {
                 border: 0;
@@ -94,7 +94,7 @@
             margin: 40px;
             img {
                 width: 100%;
-                height: 50px;
+                height: 40px;
             }
         }
 
