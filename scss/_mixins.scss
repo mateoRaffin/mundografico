@@ -1,7 +1,16 @@
-@mixin tarjetas($alto, $ancho){
-    height: $alto;
-    width: $ancho;
-    justify-self: center;
-    margin-bottom: 10px;
+@mixin encabezado ($display, $justify, $fsize){
+    display: $display;
+    justify-content: $justify;
+    font-size: $fsize;
+    margin-top: 100px;
+    margin-bottom: 300px;
+    font-family: map-get($fuentes, subtitulos-parrafos);
 }
-/* Para usar como en galería */
+@mixin separador ($ancho){
+    width: $ancho;
+    height: 1px;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+}

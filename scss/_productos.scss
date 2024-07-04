@@ -7,11 +7,9 @@
         justify-content: center;
 
         .tarjeta-sinbordes-index {
-            display: flex;
-
             img {
-                width: 400px;
-                height: 440px;
+                width: 350px;
+                height: 420px;
             }
         }
     }
@@ -23,22 +21,10 @@
     overflow: hidden;
 
     .titulo-producto {
-        margin-top: 100px;
-        margin-bottom: 100px;
-        display: flex;
-        justify-content: center;
-        font-size: 40px;
-        font-family: map-get($fuentes, subtitulos-parrafos);
-        margin-bottom: 350px;
+        @include encabezado (flex, center, 40px,);
     }
-
     .separador-productos {
-        height: 1px;
-        width: 70%;
-        color: black;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 200px;
+        @include separador (80%);
     }
 
     .card-productos {
