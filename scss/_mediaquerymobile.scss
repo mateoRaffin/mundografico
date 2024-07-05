@@ -4,7 +4,7 @@
         margin-bottom: 20px;
         width: 100%;
         height: auto;
-        background-color: $mobile-color-fondo; /* #07143F - #485DA1 */
+        background-color: $mobile-color-fondo;
         .navbar {
             width: 100%;
             height: auto;
@@ -50,9 +50,9 @@
             flex-direction: column;
             grid-template-columns: 1fr;
             grid-template-rows: auto;
-            grid-template-areas:
-                "presentacion"
-                "carousel";
+            // grid-template-areas:
+            //     "presentacion"
+            //     "carousel";
             margin-bottom: 100px;
 
             .presentacion {
@@ -99,7 +99,7 @@
 
     /* Sobre Nosotros */
     .sobre-nosotros-index {
-        background-color: $mobile-color-fondo; /*#26537e*/
+        background-color: $mobile-color-fondo;
         flex-direction: column;
         .titulo-nosotros {
             font-size: 35px;
@@ -119,7 +119,7 @@
         height: auto;
         display: flex;
         .sobre-nosotros-1 {
-            background-color: $mobile-color-fondo; /*#26537e*/
+            background-color: $mobile-color-fondo;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -246,7 +246,7 @@
 
     /* Nuestra mision */
     .nuestra-mision-index {
-        background-color: $mobile-color-fondo; /*#26537e*/
+        background-color: $mobile-color-fondo;
         flex-direction: column;
         .titulo-mision {
             font-size: 35px;
@@ -297,7 +297,7 @@
                 align-self: center;
 
                 .boton-form {
-                    background-color: $mobile-color-fondo; /*#26537e*/
+                    background-color: $mobile-color-fondo;
                     border: $mobile-color-fondo;
                     color: $color-texto;
                 }
@@ -352,7 +352,7 @@
                         align-self: center;
 
                         .boton-form {
-                            background-color: $mobile-color-fondo; /*#26537e*/
+                            background-color: $mobile-color-fondo;
                             border: $mobile-color-fondo;
                             color: $color-texto;
                         }
