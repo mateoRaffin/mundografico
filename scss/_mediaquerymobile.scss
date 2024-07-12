@@ -1,10 +1,12 @@
 @media (max-width: 550px) {
+
     /*Header-Nav*/
     .header-index {
         margin-bottom: 20px;
         width: 100%;
         height: auto;
         background-color: $mobile-color-fondo;
+
         .navbar {
             width: 100%;
             height: auto;
@@ -45,42 +47,54 @@
 
     /*Grilla*/
     .main-index {
+        margin-top: 120px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
         .section-presentacion-grilla {
+            width: 95%;
+            height: auto;
             display: flex;
+            align-items: center;
             flex-direction: column;
             margin-bottom: 100px;
 
             .presentacion {
-                width: 100%;
-                justify-content: center;
-                align-items: center;
-                .titulo-main {
-                    font-size: 45px;
-                    text-align: center;
-                }
-                .subt-main {
-                    font-size: 35px;
-                    text-align: center;
+                display: flex;
+                flex-direction: column;
+
+                .multi-animada-titulos {
+                    .titulo-main {
+                        font-size: 40px;
+                        text-align: center;
+                    }
+
+                    .subt-main {
+                        font-size: 30px;
+                        text-align: center;
+                    }
                 }
 
-                img {
-                    width: 100%;
-                    height: auto;
+                .multi-animada-banner {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 80%;
+                        height: auto;
+                    }
                 }
             }
 
-            .carousel {
+            #carouselExampleAutoplaying {
                 width: 100%;
                 height: auto;
                 display: flex;
-                align-items: center;
-                .carousel-inner {
-                    width: 100%;
-                    height: 300px;
-                    .adhesivos-h {
-                        width: 100%;
-                    }
-                }
+                align-self: normal;
             }
         }
     }
@@ -89,11 +103,14 @@
     .sobre-nosotros-index {
         background-color: $mobile-color-fondo;
         flex-direction: column;
+
         .titulo-nosotros {
             font-size: 35px;
+            text-align: center;
             justify-content: center;
             margin-bottom: 70px;
         }
+
         .parrafo-nosotros {
             font-size: 25px;
             justify-content: center;
@@ -106,17 +123,20 @@
         width: 100%;
         height: auto;
         display: flex;
+
         .sobre-nosotros-1 {
             background-color: $mobile-color-fondo;
             width: 100%;
             display: flex;
             flex-direction: column;
             margin-top: 50px;
+
             .titulo-nosotros {
                 font-size: 30px;
                 justify-content: center;
                 margin-bottom: 70px;
             }
+
             .parrafo-nosotros {
                 font-size: 25px;
                 justify-content: center;
@@ -236,11 +256,14 @@
     .nuestra-mision-index {
         background-color: $mobile-color-fondo;
         flex-direction: column;
+
         .titulo-mision {
             font-size: 35px;
+            text-align: center;
             justify-content: center;
             margin-bottom: 70px;
         }
+
         .parrafo-mision {
             font-size: 25px;
             justify-content: center;
@@ -250,6 +273,7 @@
 
     /*Contacto*/
     .contacto-index {
+        width: 90%;
         display: flex;
         flex-direction: column;
         margin-top: 100px;
@@ -262,7 +286,11 @@
         }
 
         .redes-index {
-            justify-content: space-between;
+            width: 100%;
+            justify-content: space-evenly;
+            align-items: center;
+            align-self: center;
+
             img {
                 width: 40px;
                 height: 40px;
@@ -273,6 +301,7 @@
             flex-direction: column;
             align-items: center;
             width: 100%;
+
             .mapa-contacto {
                 width: 90%;
                 height: 300px;
@@ -311,7 +340,10 @@
             }
 
             .redes-contacto {
-                justify-content: space-between;
+                width: 100%;
+                justify-content: space-evenly;
+                align-items: center;
+                align-self: center;
 
                 img {
                     width: 30px;
@@ -324,16 +356,19 @@
                 align-items: center;
                 width: 90%;
                 height: auto;
+
                 .mapa-contacto {
                     width: 90%;
                     height: 300px;
                     margin-bottom: 50px;
                 }
+
                 .animacion-contacto {
                     width: 90%;
                     height: 420px;
                     display: flex;
                     justify-content: center;
+
                     .formulario-contacto {
                         width: 100%;
                         display: flex;
@@ -360,7 +395,7 @@
         p {
             color: $color-texto;
             font-size: 15px;
-            text-align: justify;
+            text-align: center;
         }
     }
 
@@ -373,7 +408,7 @@
         p {
             color: $color-texto;
             font-size: 15px;
-            text-align: justify;
+            text-align: center;
         }
     }
 
@@ -386,7 +421,7 @@
         p {
             color: $color-texto;
             font-size: 15px;
-            text-align: justify;
+            text-align: center;
         }
     }
 
@@ -399,7 +434,7 @@
         p {
             color: $color-texto;
             font-size: 15px;
-            text-align: justify;
+            text-align: center;
         }
     }
 
@@ -412,7 +447,7 @@
         p {
             color: $color-texto;
             font-size: 15px;
-            text-align: justify;
+            text-align: center;
         }
     }
 }

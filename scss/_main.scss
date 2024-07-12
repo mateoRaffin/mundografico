@@ -5,9 +5,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: center;
     align-items: center;
-
     .section-presentacion-grilla {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -35,7 +33,6 @@
                 font-family: map-get($fuentes, subtitulos-parrafos);
                 display: flex;
                 justify-content: center;
-                align-items: center;
                 margin-bottom: 20px;
             }
 
