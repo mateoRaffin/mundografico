@@ -48,22 +48,15 @@
         .section-presentacion-grilla {
             display: flex;
             flex-direction: column;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            // grid-template-areas:
-            //     "presentacion"
-            //     "carousel";
             margin-bottom: 100px;
 
             .presentacion {
-                grid-column: auto;
-                grid-row: auto;
                 width: 100%;
                 justify-content: center;
                 align-items: center;
                 .titulo-main {
                     font-size: 45px;
-                    justify-content: center;
+                    text-align: center;
                 }
                 .subt-main {
                     font-size: 35px;
@@ -77,23 +70,18 @@
             }
 
             .carousel {
-                grid-column: auto;
                 width: 100%;
+                height: auto;
                 display: flex;
-                justify-content: center;
                 align-items: center;
                 .carousel-inner {
-                    width: 95%;
-                    justify-content: center;
-                    align-items: center;
-                    .carousel-item {
-                        img {
-                            width: 100%;
-                            height: 50%;
-                        }
+                    width: 100%;
+                    height: 300px;
+                    .adhesivos-h {
+                        width: 100%;
                     }
                 }
-            } 
+            }
         }
     }
 
