@@ -29,18 +29,18 @@
   background-color: #0f9ac0;
 }
 .header-index .logo-mundografico {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 }
 .header-index .icono-wsapp1 {
   display: flex;
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 5px;
+  right: 5px;
 }
 .header-index .icono-wsapp1 img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 .header-index .navbar-collapse {
   display: flex;
@@ -142,6 +142,7 @@
 
 .main-sobre-nosotros {
   overflow: hidden;
+  margin-bottom: 10px;
 }
 .main-sobre-nosotros .sobre-nosotros-1 {
   background-color: #0f9ac0;
@@ -265,9 +266,6 @@
   grid-column: 1/3;
   grid-row: 7/8;
   margin-bottom: -180px;
-}
-.main-productos .card-productos .p-7 img {
-  transform: rotate(270deg);
 }
 .main-productos .card-productos .p-8 {
   grid-column: 1/3;
