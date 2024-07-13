@@ -5,7 +5,7 @@ if(isset($_POST["enviar"])){
     $email=$_POST["email"];
     $mensaje=$_POST["mensaje"];
 
-    $destinatario="raffinmateonicolas@gmail.com";
+    $destinatario="consultas@mundo-grafico.com";
     $asunto="Nuevo mensaje de $email";
 
     $contenido="Nombre: $nombre \n";
