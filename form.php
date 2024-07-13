@@ -11,7 +11,7 @@ $mensaje .= "Enviado el " . date('d/m/Y', time());
 $destinatario = 'raffinmateonicolas@gmail.com';
 $asunto = 'Este mail fue enviado desde la web';
 
-mail($destinatario, $asunto, $mensaje, $header);
+$mail=mail($destinatario, $asunto, $mensaje, $header);
 
 header('Location:index.html');
 
