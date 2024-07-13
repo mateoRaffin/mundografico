@@ -1,4 +1,5 @@
 <?php
+
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];
 $mensaje = $_POST['mensaje'];
@@ -11,7 +12,7 @@ $mensaje .= "Enviado el " . date('d/m/Y', time());
 $destinatario = 'raffinmateonicolas@gmail.com';
 $asunto = 'Este mail fue enviado desde la web';
 
-$mail=mail($destinatario, $asunto, $mensaje, $header);
+mail($destinatario, $asunto, $mensaje, $header);
 
 header('Location:index.html');
 

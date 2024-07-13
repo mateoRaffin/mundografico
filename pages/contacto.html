@@ -76,17 +76,18 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1780.788082388782!2d-60.44516738173
                 328!3d-26.789777054041206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94412ce1b7af1609%3A0xbd9
                 2d9bf137f4335!2sPellegrini%20730%2C%20H3700%20S%C3%A1enz%20Pe%C3%B1a%2C%20Chaco!5e0!3m2!1ses-419!2sar!
-                4v1715796377485!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" class="mapa-contacto"></iframe>
+                4v1715796377485!5m2!1ses-419!2sar" title="Ubicacion" style="border:0;" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa-contacto"> Ubicación </iframe>
                 <div data-aos="flip-up" class="animacion-contacto">
-                    <form action="form.php" method="post" class="formulario-contacto">
-                        <label for="nombre">Nombre y Apellido</label>
+                    
+                    <form action="formulario.php" method="post" class="formulario-contacto">
+                        <label for="nombre">Nombre y Apellido *</label>
                         <input type="text" name="nombre" id="nombre" placeholder="Pedro Gancedo" class="texto-entrada">
 
-                        <label for="email">Email</label>
+                        <label for="email">Email *</label>
                         <input type="email" name="email" id="email" placeholder="@gmail.com" class="texto-entrada">
 
-                        <label for="mensaje">Mensaje</label>
+                        <label for="mensaje">Mensaje *</label>
                         <textarea name="mensaje" id="mensaje" cols="50" rows="10" placeholder="Dejanos tu mensaje"
                             class="texto-entrada"></textarea>
                         <input type="submit" value="Enviar" class="boton-form">
