@@ -1,19 +1,27 @@
 <?php
 
-$nombre = $_POST['nombre'];
-$email = $_POST['email'];
-$mensaje = $_POST['mensaje'];
+if(isset($_POST["enviar"])){
+    $nombre=$_POST["nombre"];
+    $email=$_POST["email"];
+    $mensaje=$_POST["mensaje"];
 
-$mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
-$mensaje .= "Su e-mail es: " . $email . "\r\n";
-$mensaje .= "Mensaje: " . $_POST['mensaje'] . "\r\n"; 
-$mensaje .= "Enviado el " . date('d/m/Y', time());
+    $destinatario="raffinmateonicolas@gmail.com";
+    $asunto="Nuevo mensaje de $email";
 
-$destinatario = 'raffinmateonicolas@gmail.com';
-$asunto = 'Este mail fue enviado desde la web';
+    $contenido="Nombre: $nombre \n";
+    $contenido.="Email: $email \n";
+    $contenido.="Mensaje: $mensaje";
 
-mail($destinatario, $asunto, $mensaje, $header);
+    $header="From: mundo-grafico.com";
 
-header('Location:index.html');
+    $mail=mail($destinatario,$asunto,$contenido,$header);
+
+    if($mail){
+        echo "<script>alert('Muchas gracias! El correo se envió correctamente y responderemos a la brevedad.');</script>";
+    }else{
+        echo "<script>alert('No fue posible realizar esta operación, intente nuevamente más tarde.');</script>";
+    }
+
+}
 
 ?>
