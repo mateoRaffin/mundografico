@@ -106,8 +106,8 @@
   margin-bottom: 20px;
 }
 .main-index .section-presentacion-grilla .presentacion img {
-  width: 80%;
-  height: 350px;
+  width: 75%;
+  height: 250px;
 }
 .main-index .section-presentacion-grilla .carousel {
   grid-area: carousel;
