@@ -594,8 +594,9 @@ footer p {
     align-items: center;
   }
   .main-index .section-presentacion-grilla .presentacion .multi-animada-banner img {
-    width: 80%;
+    width: 33%;
     height: auto;
+    margin-bottom: 20px;
   }
   .main-index .section-presentacion-grilla #carouselExampleAutoplaying {
     width: 100%;
@@ -965,8 +966,9 @@ footer p {
     align-items: center;
   }
   .main-index .section-presentacion-grilla .presentacion .multi-animada-banner img {
-    width: 80%;
+    width: 33%;
     height: auto;
+    margin-bottom: 20px;
   }
   .main-index .section-presentacion-grilla #carouselExampleAutoplaying {
     width: 100%;
