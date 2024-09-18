@@ -91,21 +91,28 @@
   grid-row: 1/4;
   justify-self: center;
 }
-.main-index .section-presentacion-grilla .presentacion .titulo-main {
+.main-index .section-presentacion-grilla .presentacion .multi-animada-titulos .titulo-main {
   font-size: 55px;
   font-family: "oswald";
   display: flex;
   justify-content: center;
+  text-align: center;
+  justify-self: center;
   margin-bottom: 20px;
 }
-.main-index .section-presentacion-grilla .presentacion .subt-main {
+.main-index .section-presentacion-grilla .presentacion .multi-animada-titulos .subt-main {
   font-size: 30px;
   font-family: "oswaldreg";
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
-.main-index .section-presentacion-grilla .presentacion img {
+.main-index .section-presentacion-grilla .presentacion .multi-animada-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-index .section-presentacion-grilla .presentacion .multi-animada-banner img {
   width: 75%;
   height: 250px;
 }
