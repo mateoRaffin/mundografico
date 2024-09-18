@@ -6,6 +6,7 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+
     .section-presentacion-grilla {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -14,33 +15,41 @@
         width: 95%;
         height: auto;
         margin-bottom: 125px;
+
         .presentacion {
             grid-area: presentacion;
             grid-column: 1 / 2;
             grid-row: 1 / 4;
             justify-self: center;
 
-            .titulo-main {
-                font-size: 55px;
-                font-family: map-get($fuentes, titulos);
+            .multi-animada-titulos {
+                .titulo-main {
+                    font-size: 55px;
+                    font-family: map-get($fuentes, titulos);
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                }
+
+                .subt-main {
+                    font-size: 30px;
+                    font-family: map-get($fuentes, subtitulos-parrafos);
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                }
+            }
+            .multi-animada-banner {
                 display: flex;
                 justify-content: center;
-                margin-bottom: 20px;
-            }
-
-            .subt-main {
-                font-size: 30px;
-                font-family: map-get($fuentes, subtitulos-parrafos);
-                display: flex;
-                justify-content: center;
-                margin-bottom: 20px;
-            }
-
-            img {
-                width: 75%;
-                height: 250px;
-            }
+                align-items: center;
+                img {
+                    width: 75%;
+                    height: 250px;
+                }
+            }    
         }
+
         .carousel {
             grid-area: carousel;
             grid-column: 2/3;
