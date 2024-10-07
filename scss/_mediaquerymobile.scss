@@ -46,9 +46,9 @@
     }
     /*Banner*/
     .first-banner-swal {
-        max-width: 95%;
-        padding: 1px;
-        font-size: 7px;
+        width: 95%;
+        font-size: 10px;
+        margin-top: 50px;
         img.banner-image {
             width: 100%;
             height: auto;
@@ -56,9 +56,8 @@
         }
     }
     .second-banner-swal {
-        max-width: 200px;
-        padding: 1px;
-        font-size: 5px;
+        max-width: 40%;
+        font-size: 8px;
         img.banner-image {
             width: 100%;
             height: auto;

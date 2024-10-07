@@ -12,6 +12,8 @@ function showFirstBanner() {
         confirmButtonColor: "#0f9ac0",
         imageUrl: "./multimedia/img/productos/agendas-publi01.jpeg",
         imageAlt: "Agendas día de la madre",
+        padding: '1px',
+        backdrop: false,
         customClass: {
             popup: 'first-banner-swal',
             image: 'banner-image'
@@ -34,7 +36,6 @@ function showSecondBanner() {
         confirmButtonText: "Pedir",
         confirmButtonColor: "#0f9ac0",
         position: 'bottom-start',
-        width: '15%',
         padding: '1px',
         backdrop: false,
         customClass: {
