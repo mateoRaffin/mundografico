@@ -11,7 +11,11 @@ function showFirstBanner() {
         confirmButtonText: "Pedir Ahora",
         confirmButtonColor: "#0f9ac0",
         imageUrl: "./multimedia/img/productos/agendas-publi01.jpeg",
-        imageAlt: "Agendas día de la madre"
+        imageAlt: "Agendas día de la madre",
+        customClass: {
+            popup: 'first-banner-swal',
+            image: 'banner-image'
+        }
     }).then((result) => {
         if (result.isConfirmed) {
             window.location.href = "https://wa.me/+5493644520797";
@@ -34,7 +38,7 @@ function showSecondBanner() {
         padding: '1px',
         backdrop: false,
         customClass: {
-            popup: 'banner-swal',
+            popup: 'second-banner-swal',
             image: 'banner-image'
         }
     }).then((result) => {

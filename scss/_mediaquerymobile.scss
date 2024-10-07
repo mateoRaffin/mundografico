@@ -44,7 +44,27 @@
             }
         }
     }
-
+    /*Banner*/
+    .first-banner-swal {
+        max-width: 95%;
+        padding: 1px;
+        font-size: 7px;
+        img.banner-image {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+    .second-banner-swal {
+        max-width: 200px;
+        padding: 1px;
+        font-size: 5px;
+        img.banner-image {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
     /*Grilla*/
     .main-index {
         margin-top: 120px;
