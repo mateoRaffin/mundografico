@@ -10,7 +10,7 @@ function showFirstBanner() {
         showCancelButton: true,
         confirmButtonText: "Pedir Ahora",
         confirmButtonColor: "#0f9ac0",
-        imageUrl: "./multimedia/img/productos/agendas-publi01.jpeg",
+        imageUrl: "../multimedia/img/productos/agendas-publi01.jpeg",
         imageAlt: "Agendas día de la madre"
     }).then((result) => {
         if (result.isConfirmed) {
@@ -24,7 +24,7 @@ function showSecondBanner() {
     return Swal.fire({
         title: "¡Oferta Especial!",
         text: "¡Agendas Día de la Madre!",
-        imageUrl: "./multimedia/img/productos/agendas-publi02.jpeg",
+        imageUrl: "../multimedia/img/productos/agendas-publi02.jpeg",
         imageAlt: "Agendas día de la madre",
         showConfirmButton: true,
         confirmButtonText: "Pedir",
