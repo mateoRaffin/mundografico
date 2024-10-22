@@ -5,14 +5,16 @@ let secondBannerShown = false;
 // Función para mostrar el primer banner
 function showFirstBanner() {
     return Swal.fire({
-        title: "¡Agendas <strong>Día de la Madre</strong>!",
-        text: "¡Aprovechá la Oferta y reservá tu agenda!",
+        title: "¡<strong>Regalos fin de Año</strong>!",
+        text: "¡Aprovechá nuestras Ofertas!",
         showCancelButton: true,
         confirmButtonText: "Pedir Ahora",
         confirmButtonColor: "#0f9ac0",
-        imageUrl: "../multimedia/img/productos/agendas-publi01.jpeg",
-        imageAlt: "Agendas día de la madre",
+        imageUrl: "../multimedia/img/productos/regalosfindeaño.jpeg",
+        imageAlt: "Regalos fin de Año",
         padding: '1px',
+        width: "500px",
+        height: "450px",
         backdrop: false,
         customClass: {
             popup: 'first-banner-swal',
