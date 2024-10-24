@@ -5,11 +5,15 @@
     .contenedor-prod {
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        margin: 5px 5px;
+        gap: 15px;
 
         .tarjeta-sinbordes-index {
             img {
-                width: 350px;
-                height: 420px;
+                box-shadow: 0px 0px 7px #1C1C1C;
+                width: 1700px;
+                height: 300px;
             }
         }
     }

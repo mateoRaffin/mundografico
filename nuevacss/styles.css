@@ -110,7 +110,7 @@
   grid-template-areas: "presentacion carousel";
   width: 95%;
   height: auto;
-  margin-bottom: 125px;
+  margin-bottom: 100px;
 }
 .main-index .section-presentacion-grilla .presentacion {
   grid-area: presentacion;
@@ -205,10 +205,14 @@
 .productos-index .contenedor-prod {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  margin: 5px 5px;
+  gap: 15px;
 }
 .productos-index .contenedor-prod .tarjeta-sinbordes-index img {
-  width: 350px;
-  height: 420px;
+  box-shadow: 0px 0px 7px #1C1C1C;
+  width: 1700px;
+  height: 300px;
 }
 
 .main-productos {
