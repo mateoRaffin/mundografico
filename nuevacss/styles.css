@@ -200,19 +200,34 @@
 
 /* Productos */
 .productos-index {
-  margin: 150px 0;
+  display: flex;
+  margin: 120px 0px;
+  width: 90%;
+  height: auto;
 }
 .productos-index .contenedor-prod {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   margin: 5px 5px;
-  gap: 15px;
+  gap: 50px;
+  width: 100%;
+  height: auto;
 }
-.productos-index .contenedor-prod .tarjeta-sinbordes-index img {
-  box-shadow: 0px 0px 7px #1C1C1C;
-  width: 1700px;
-  height: 300px;
+.productos-index .contenedor-prod .tarjeta-sinbordes-index {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.productos-index .contenedor-prod .tarjeta-sinbordes-index .producto-animacion-zoom {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.productos-index .contenedor-prod .tarjeta-sinbordes-index .producto-animacion-zoom img {
+  width: 85%;
+  height: auto;
+  box-shadow: 8px 8px 25px #1c1c1c, -8px -8px 25px #FFFFFF;
+  border-radius: 10px;
 }
 
 .main-productos {
@@ -721,11 +736,17 @@ footer p {
   .productos-index {
     display: flex;
     align-items: center;
+    width: 90%;
+    height: auto;
   }
   .productos-index .contenedor-prod {
+    width: 100%;
+    height: auto;
     flex-direction: column;
   }
   .productos-index .contenedor-prod .tarjeta-sinbordes-index {
+    width: 100%;
+    height: auto;
     justify-content: center;
     border: none;
     border-radius: none;
@@ -736,7 +757,7 @@ footer p {
     justify-content: center;
   }
   .productos-index .contenedor-prod .tarjeta-sinbordes-index .producto-animacion-zoom img {
-    width: 50%;
+    width: 90%;
     height: auto;
   }
   .main-productos {
@@ -1112,11 +1133,17 @@ footer p {
   .productos-index {
     display: flex;
     align-items: center;
+    width: 90%;
+    height: auto;
   }
   .productos-index .contenedor-prod {
+    width: 100%;
+    height: auto;
     flex-direction: column;
   }
   .productos-index .contenedor-prod .tarjeta-sinbordes-index {
+    width: 100%;
+    height: auto;
     justify-content: center;
     border: none;
     border-radius: none;
@@ -1127,7 +1154,7 @@ footer p {
     justify-content: center;
   }
   .productos-index .contenedor-prod .tarjeta-sinbordes-index .producto-animacion-zoom img {
-    width: 50%;
+    width: 90%;
     height: auto;
   }
   .main-productos {

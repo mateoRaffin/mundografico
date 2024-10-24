@@ -1,5 +1,4 @@
 @media (min-width: 551px) and (max-width: 1199px) {
-
     /*Header-Nav*/
     .header-index {
         margin-bottom: 20px;
@@ -199,11 +198,17 @@
     .productos-index {
         display: flex;
         align-items: center;
+        width: 90%;
+        height: auto;
 
         .contenedor-prod {
+            width: 100%;
+            height: auto;
             flex-direction: column;
 
             .tarjeta-sinbordes-index {
+                width: 100%;
+                height: auto;
                 justify-content: center;
                 border: none;
                 border-radius: none;
@@ -214,7 +219,7 @@
                     justify-content: center;
 
                     img {
-                        width: 50%;
+                        width: 90%;
                         height: auto;
                     }
                 }
