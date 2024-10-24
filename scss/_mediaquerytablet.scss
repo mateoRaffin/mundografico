@@ -198,17 +198,16 @@
     .productos-index {
         display: flex;
         align-items: center;
-        width: 90%;
+        width: 95%;
         height: auto;
 
         .contenedor-prod {
             width: 100%;
             height: auto;
             flex-direction: column;
-
+            gap: 20px;
             .tarjeta-sinbordes-index {
                 width: 100%;
-                height: auto;
                 justify-content: center;
                 border: none;
                 border-radius: none;
@@ -219,7 +218,7 @@
                     justify-content: center;
 
                     img {
-                        width: 90%;
+                        width: 100%;
                         height: auto;
                     }
                 }
