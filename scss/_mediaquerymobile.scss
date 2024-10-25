@@ -102,18 +102,22 @@
                     align-items: center;
 
                     img {
-                        width: 33%;
+                        width: 25%;
                         height: auto;
-                        margin-bottom: 20px;
+                        margin-bottom: 40px;
                     }
                 }
             }
 
             #carouselExampleAutoplaying {
-                width: 100%;
+                width: 80%;
                 height: auto;
                 display: flex;
-                align-self: normal;
+            }
+            .BanneryPromos{
+                width: 95%;
+                height: auto;
+                margin-top: 50px;
             }
         }
     }
@@ -197,14 +201,16 @@
     .productos-index {
         display: flex;
         align-items: center;
-        width: 97%;
+        width: 95%;
         height: auto;
+        margin: 15px;
+        margin-top: 40px;
+        margin-bottom: 40px;
 
         .contenedor-prod {
             width: 100%;
             height: auto;
-            flex-direction: column;
-            gap: 10px;
+            gap: 30px;
             .tarjeta-sinbordes-index {
                 width: 100%;
                 justify-content: center;

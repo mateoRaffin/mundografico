@@ -104,18 +104,21 @@
                     align-items: center;
 
                     img {
-                        width: 33%;
+                        width: 25%;
                         height: auto;
-                        margin-bottom: 20px;
+                        margin-bottom: 40px;
                     }
                 }
             }
 
             #carouselExampleAutoplaying {
-                width: 100%;
+                width: 70%;
                 height: auto;
-                display: flex;
-                align-self: normal;
+                display: flex; 
+            }
+            .BanneryPromos{
+                width: 95%;
+                height: auto;
             }
         }
     }
