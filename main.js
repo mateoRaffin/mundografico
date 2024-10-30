@@ -4,9 +4,23 @@ let secondBannerShown = false;
 
 // Función para mostrar el primer banner
 function showFirstBanner() {
-    return Swal.fire({ 
+    return Swal.fire({
         title: "¡<strong>Regalos fin de Año</strong>!",
         text: "¡Aprovechá nuestras Ofertas!",
+        showClass: {
+            popup: `
+              animate__animated
+              animate__fadeInUp
+              animate__slow
+            `
+        },
+        hideClass: {
+            popup: `
+              animate__animated
+              animate__fadeOutDown
+              animate__faster
+            `
+        },
         showCancelButton: true,
         confirmButtonText: "Pedir Ahora",
         confirmButtonColor: "#0f9ac0",
@@ -32,6 +46,20 @@ function showSecondBanner() {
     return Swal.fire({
         title: "¡Oferta Especial!",
         text: "¡Agendas!",
+        showClass: {
+            popup: `
+              animate__animated
+              animate__fadeInUp
+              animate__slow
+            `
+        },
+        hideClass: {
+            popup: `
+              animate__animated
+              animate__fadeOutDown
+              animate__faster
+            `
+        },
         imageUrl: "./multimedia/img/productos/agendas2025-bgblue.jpeg",
         imageAlt: "Agendas",
         showCancelButton: true,
@@ -53,13 +81,13 @@ function showSecondBanner() {
     });
 }
 //Mostrar primer banner
-window.onload = function(){
+window.onload = function () {
     showFirstBanner(); //Lo mostraría al cargar la página
 };
 //Evento scroll - segundo banner
-window.addEventListener('scroll', function(){
+window.addEventListener('scroll', function () {
     const scrollPosition = window.scrollY;
-    if(scrollPosition > 400 && !secondBannerShown){
+    if (scrollPosition > 400 && !secondBannerShown) {
         secondBannerShown = true;
         showSecondBanner();
     }
