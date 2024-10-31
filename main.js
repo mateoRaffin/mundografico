@@ -1,8 +1,8 @@
-// Variable para controlar si los anuncios ya fueron mostrados
+//Variable para controlar si los anuncios ya fueron mostrados
 let firstBannerShown = false;
 let secondBannerShown = false;
 
-// Función para mostrar el primer banner
+//Función para mostrar el primer banner
 function showFirstBanner() {
     return Swal.fire({
         title: "¡<strong>Regalos fin de Año</strong>!",
@@ -11,7 +11,7 @@ function showFirstBanner() {
             popup: `
               animate__animated
               animate__fadeInUp
-              animate__slow
+              animate__faster
             `
         },
         hideClass: {
@@ -41,7 +41,7 @@ function showFirstBanner() {
     });
 }
 
-// Función para mostrar el segundo banner en la parte inferior izquierda
+//Función para mostrar el segundo banner en la parte inferior izquierda
 function showSecondBanner() {
     return Swal.fire({
         title: "¡Oferta Especial!",
@@ -92,3 +92,13 @@ window.addEventListener('scroll', function () {
         showSecondBanner();
     }
 });
+
+
+// const sobreNosotros = document.createElement("section");
+// sobreNosotros.innerHTML = `<section class="sobre-nosotros-index">
+//                                 <h2 class="titulo-nosotros">Sobre Nosotros</h2>
+//                                 <p class="parrafo-nosotros">Nuestro compromiso con la excelencia y la atención al detalle 
+//                                 nos ha convertido en un socio confiable y respetado en la industria de las artes gráficas.</p>
+//                             </section>`;
+// document.body.appendChild(sobreNosotros);
+
