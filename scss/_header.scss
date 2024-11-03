@@ -5,7 +5,7 @@
     top: 0;
     z-index: 1;
     background-color: $color-fondo;
-
+    box-shadow: 0px 2px 7px #1A1A1A;
     .logo-mundografico {
         width: 50px;
         height: 50px;
@@ -41,7 +41,7 @@
                     transition: all 0.4s;
                 }
                 .nav-link:hover {
-                    color: #16161D;
+                    color: #0f9ac0;
                 }
             }
         }
