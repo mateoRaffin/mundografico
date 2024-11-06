@@ -3,9 +3,8 @@
     .header-index {
         margin-bottom: 20px;
         width: 100%;
-        height: auto;
+        height: 68px;
         background-color: $mobile-color-fondo;
-
         .navbar {
             width: 100%;
             height: auto;
@@ -29,15 +28,30 @@
 
                 .navbar-toggler {
                     border: none;
+                    .navbar-toggler-icon{
+                        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23EBE6E0' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+                    }
                 }
-
-                .collapse {
-                    .navbar-nav {
+                .navbar-toggler:focus {
+                    outline: none;
+                    box-shadow: none;
+                }
+                .navbar-collapse{
+                    transition: height 0.4s ease-in-out;
+                    &.show{
+                        background-color: #073c59;
+                        transition: background-color 0.4s ease-in-out;
                         .nav-item {
+                            background-color: #073c59;
                             a {
                                 color: $color-texto;
                             }
                         }
+                    }
+                    .navbar-nav {
+                        background-color: #073c59;
+                        padding: 1rem;
+                        width: 100%;
                     }
                 }
             }
@@ -86,7 +100,7 @@
 
                 .multi-animada-titulos {
                     .titulo-main {
-                        font-size: 40px;
+                        font-size: 70px;
                         text-align: center;
                     }
 
@@ -102,7 +116,7 @@
                     align-items: center;
 
                     img {
-                        width: 25%;
+                        width: 20%;
                         height: auto;
                         margin-bottom: 40px;
                     }
@@ -110,7 +124,7 @@
             }
 
             #carouselExampleAutoplaying {
-                width: 80%;
+                width: 85%;
                 height: auto;
                 display: flex;
             }
@@ -118,20 +132,24 @@
                 width: 95%;
                 height: auto;
                 margin-top: 50px;
+                #imgPromociones{
+                    width: 100%;
+                    height: auto;
+                }
             }
         }
     }
 
     /* Sobre Nosotros */
     .sobre-nosotros-index {
-        background-color: $mobile-color-fondo;
+        background-color: $color-secciones;
         flex-direction: column;
 
         .titulo-nosotros {
             font-size: 35px;
             text-align: center;
             justify-content: center;
-            margin-bottom: 70px;
+            margin-bottom: 25px;
         }
 
         .parrafo-nosotros {
@@ -148,7 +166,7 @@
         display: flex;
 
         .sobre-nosotros-1 {
-            background-color: $mobile-color-fondo;
+            background-color: $color-secciones;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -284,14 +302,14 @@
 
     /* Nuestra mision */
     .nuestra-mision-index {
-        background-color: $mobile-color-fondo;
+        background-color: $color-secciones;
         flex-direction: column;
 
         .titulo-mision {
             font-size: 35px;
             text-align: center;
             justify-content: center;
-            margin-bottom: 70px;
+            margin-bottom: 35px;
         }
 
         .parrafo-mision {
@@ -383,6 +401,7 @@
 
             .form-contacto {
                 flex-direction: column;
+                align-self: center;
                 align-items: center;
                 width: 90%;
                 height: auto;

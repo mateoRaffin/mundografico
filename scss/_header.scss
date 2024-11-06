@@ -1,16 +1,18 @@
 /* Header - Nav */
 .header-index {
     margin-bottom: 100px;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+    height: 68px;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     background-color: $color-fondo;
-    box-shadow: 0px 2px 7px #1A1A1A;
+    box-shadow: 0px 2px 7px #073c59;
     .logo-mundografico {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
     }
-
     .icono-wsapp1 {
         display: flex;
         position: fixed;
@@ -21,7 +23,6 @@
             height: 40px;
         }
     }
-
     .navbar-collapse {
         display: flex;
         justify-content: space-around;
@@ -34,7 +35,7 @@
                 transition: all 0.5s;
                 object-fit: cover;
                 .nav-link {
-                    font-size: 20px;
+                    font-size: 17px;
                     font-weight: 100;
                     color: $color-texto;
                     text-decoration: none;

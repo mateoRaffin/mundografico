@@ -6,7 +6,6 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
-
     .section-presentacion-grilla {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -17,7 +16,7 @@
         margin-bottom: 100px;
         align-items: center;
         justify-items: center;
-
+        position: static;
         .presentacion {
             grid-area: presentacion;
             grid-column: 1 / 2;
@@ -34,7 +33,8 @@
                     justify-self: center;
                     margin-bottom: 20px;
                     color: #073c59;
-                    filter: drop-shadow(0px 5px 3px #333);
+                    text-shadow: 0px 5px 4px #363636;
+                    cursor:default;
                 }
 
                 .subt-main {
@@ -43,7 +43,8 @@
                     display: flex;
                     justify-content: center;
                     margin-bottom: 50px;
-                    filter: drop-shadow(0px 2px 3px #333);
+                    text-shadow: 0px 1px 2px #363636;
+                    cursor:default;
                 }
             }
 
@@ -55,7 +56,7 @@
                 img {
                     width: 30%;
                     height: 230px;
-                    filter: drop-shadow(0px 15px 5px #363636);
+                    filter: drop-shadow(0px 7px 4px #363636);
                 }
             }
         }
@@ -66,6 +67,24 @@
             grid-row: 1/4;
             display: flex;
             box-shadow: 0px 7px 8px #141414;
+            .carousel-control-prev{
+                z-index: 0;
+                .carousel-control-prev-icon{
+                    z-index: 0;
+                }
+                .visually-hidden{
+                    z-index: 0;
+                }
+            }
+            .carousel-control-next{
+                z-index: 0;
+                .carousel-control-next-icon{
+                    z-index: 0;
+                }
+                .visually-hidden{
+                    z-index: 0;
+                }
+            }
         }
 
         .BanneryPromos {

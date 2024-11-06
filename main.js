@@ -92,13 +92,3 @@ window.addEventListener('scroll', function () {
         showSecondBanner();
     }
 });
-
-
-// const sobreNosotros = document.createElement("section");
-// sobreNosotros.innerHTML = `<section class="sobre-nosotros-index">
-//                                 <h2 class="titulo-nosotros">Sobre Nosotros</h2>
-//                                 <p class="parrafo-nosotros">Nuestro compromiso con la excelencia y la atención al detalle 
-//                                 nos ha convertido en un socio confiable y respetado en la industria de las artes gráficas.</p>
-//                             </section>`;
-// document.body.appendChild(sobreNosotros);
-

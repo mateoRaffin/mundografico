@@ -21,18 +21,31 @@
   scroll-behavior: smooth;
 }
 
+body {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 /* Header - Nav */
 .header-index {
   margin-bottom: 100px;
-  position: sticky;
-  top: 0;
-  z-index: 1;
+  height: 68px;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   background-color: #073c59;
-  box-shadow: 0px 2px 7px #1A1A1A;
+  box-shadow: 0px 2px 7px #073c59;
 }
 .header-index .logo-mundografico {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
 }
 .header-index .icono-wsapp1 {
   display: flex;
@@ -59,7 +72,7 @@
   object-fit: cover;
 }
 .header-index .navbar-collapse .navbar-nav .nav-item .nav-link {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 100;
   color: #FAFAFA;
   text-decoration: none;
@@ -115,6 +128,7 @@
   margin-bottom: 100px;
   align-items: center;
   justify-items: center;
+  position: static;
 }
 .main-index .section-presentacion-grilla .presentacion {
   grid-area: presentacion;
@@ -131,7 +145,8 @@
   justify-self: center;
   margin-bottom: 20px;
   color: #073c59;
-  filter: drop-shadow(0px 5px 3px #333);
+  text-shadow: 0px 5px 4px #363636;
+  cursor: default;
 }
 .main-index .section-presentacion-grilla .presentacion .multi-animada-titulos .subt-main {
   font-size: 40px;
@@ -139,7 +154,8 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  filter: drop-shadow(0px 2px 3px #333);
+  text-shadow: 0px 1px 2px #363636;
+  cursor: default;
 }
 .main-index .section-presentacion-grilla .presentacion .multi-animada-banner {
   display: flex;
@@ -149,7 +165,7 @@
 .main-index .section-presentacion-grilla .presentacion .multi-animada-banner img {
   width: 30%;
   height: 230px;
-  filter: drop-shadow(0px 15px 5px #363636);
+  filter: drop-shadow(0px 7px 4px #363636);
 }
 .main-index .section-presentacion-grilla .carousel {
   grid-area: carousel;
@@ -157,6 +173,24 @@
   grid-row: 1/4;
   display: flex;
   box-shadow: 0px 7px 8px #141414;
+}
+.main-index .section-presentacion-grilla .carousel .carousel-control-prev {
+  z-index: 0;
+}
+.main-index .section-presentacion-grilla .carousel .carousel-control-prev .carousel-control-prev-icon {
+  z-index: 0;
+}
+.main-index .section-presentacion-grilla .carousel .carousel-control-prev .visually-hidden {
+  z-index: 0;
+}
+.main-index .section-presentacion-grilla .carousel .carousel-control-next {
+  z-index: 0;
+}
+.main-index .section-presentacion-grilla .carousel .carousel-control-next .carousel-control-next-icon {
+  z-index: 0;
+}
+.main-index .section-presentacion-grilla .carousel .carousel-control-next .visually-hidden {
+  z-index: 0;
 }
 .main-index .section-presentacion-grilla .BanneryPromos {
   grid-area: carousel;
@@ -201,7 +235,8 @@
   margin-bottom: 10px;
 }
 .main-sobre-nosotros .sobre-nosotros-1 {
-  background-color: #073c59;
+  background-color: #0f9ac0;
+  margin-top: 165px;
   padding: 5% 5%;
   display: flex;
   flex-direction: column;
@@ -497,7 +532,7 @@
 
 .main-contacto {
   margin-top: 150px;
-  margin-bottom: 100px;
+  margin-bottom: -13px;
   overflow: hidden;
 }
 .main-contacto .contenedor-contacto {
@@ -526,7 +561,6 @@
   height: 500px;
   display: flex;
   justify-content: space-around;
-  align-self: center;
   align-items: center;
 }
 .main-contacto .contenedor-contacto .form-contacto .mapa-contacto {
@@ -600,7 +634,7 @@ footer p {
   .header-index {
     margin-bottom: 20px;
     width: 100%;
-    height: auto;
+    height: 68px;
     background-color: #073c59;
   }
   .header-index .navbar {
@@ -624,8 +658,30 @@ footer p {
   .header-index .navbar .container-fluid .navbar-toggler {
     border: none;
   }
-  .header-index .navbar .container-fluid .collapse .navbar-nav .nav-item a {
+  .header-index .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23EBE6E0' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  .header-index .navbar .container-fluid .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .header-index .navbar .container-fluid .navbar-collapse {
+    transition: height 0.4s ease-in-out;
+  }
+  .header-index .navbar .container-fluid .navbar-collapse.show {
+    background-color: #073c59;
+    transition: background-color 0.4s ease-in-out;
+  }
+  .header-index .navbar .container-fluid .navbar-collapse.show .nav-item {
+    background-color: #073c59;
+  }
+  .header-index .navbar .container-fluid .navbar-collapse.show .nav-item a {
     color: #FAFAFA;
+  }
+  .header-index .navbar .container-fluid .navbar-collapse .navbar-nav {
+    background-color: #073c59;
+    padding: 1rem;
+    width: 100%;
   }
   /*Banner*/
   .first-banner-swal {
@@ -669,7 +725,7 @@ footer p {
     flex-direction: column;
   }
   .main-index .section-presentacion-grilla .presentacion .multi-animada-titulos .titulo-main {
-    font-size: 40px;
+    font-size: 70px;
     text-align: center;
   }
   .main-index .section-presentacion-grilla .presentacion .multi-animada-titulos .subt-main {
@@ -682,12 +738,12 @@ footer p {
     align-items: center;
   }
   .main-index .section-presentacion-grilla .presentacion .multi-animada-banner img {
-    width: 25%;
+    width: 20%;
     height: auto;
     margin-bottom: 40px;
   }
   .main-index .section-presentacion-grilla #carouselExampleAutoplaying {
-    width: 80%;
+    width: 85%;
     height: auto;
     display: flex;
   }
@@ -696,16 +752,20 @@ footer p {
     height: auto;
     margin-top: 50px;
   }
+  .main-index .section-presentacion-grilla .BanneryPromos #imgPromociones {
+    width: 100%;
+    height: auto;
+  }
   /* Sobre Nosotros */
   .sobre-nosotros-index {
-    background-color: #073c59;
+    background-color: #0f9ac0;
     flex-direction: column;
   }
   .sobre-nosotros-index .titulo-nosotros {
     font-size: 35px;
     text-align: center;
     justify-content: center;
-    margin-bottom: 70px;
+    margin-bottom: 25px;
   }
   .sobre-nosotros-index .parrafo-nosotros {
     font-size: 25px;
@@ -719,7 +779,7 @@ footer p {
     display: flex;
   }
   .main-sobre-nosotros .sobre-nosotros-1 {
-    background-color: #073c59;
+    background-color: #0f9ac0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -832,14 +892,14 @@ footer p {
   }
   /* Nuestra mision */
   .nuestra-mision-index {
-    background-color: #073c59;
+    background-color: #0f9ac0;
     flex-direction: column;
   }
   .nuestra-mision-index .titulo-mision {
     font-size: 35px;
     text-align: center;
     justify-content: center;
-    margin-bottom: 70px;
+    margin-bottom: 35px;
   }
   .nuestra-mision-index .parrafo-mision {
     font-size: 25px;
@@ -917,6 +977,7 @@ footer p {
   }
   .main-contacto .contenedor-contacto .form-contacto {
     flex-direction: column;
+    align-self: center;
     align-items: center;
     width: 90%;
     height: auto;
@@ -1004,7 +1065,7 @@ footer p {
   .header-index {
     margin-bottom: 20px;
     width: 100%;
-    height: auto;
+    height: 68px;
     background-color: #073c59;
   }
   .header-index .navbar {
@@ -1028,8 +1089,28 @@ footer p {
   .header-index .navbar .container-fluid .navbar-toggler {
     border: none;
   }
-  .header-index .navbar .container-fluid .collapse .navbar-nav .nav-item a {
+  .header-index .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23EBE6E0' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  .header-index .navbar .container-fluid .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .header-index .navbar .container-fluid .navbar-collapse {
+    transition: height 0.4s ease-in-out;
+  }
+  .header-index .navbar .container-fluid .navbar-collapse.show {
+    background-color: #073c59;
+    transition: background-color 0.4s ease-in-out;
+  }
+  .header-index .navbar .container-fluid .navbar-collapse.show .nav-item {
+    background-color: #073c59;
+  }
+  .header-index .navbar .container-fluid .navbar-collapse.show .nav-item a {
     color: #FAFAFA;
+  }
+  .header-index .navbar .container-fluid .navbar-collapse .navbar-nav {
+    background-color: #073c59;
   }
   /*Banner*/
   .first-banner-swal {
@@ -1073,11 +1154,11 @@ footer p {
     flex-direction: column;
   }
   .main-index .section-presentacion-grilla .presentacion .multi-animada-titulos .titulo-main {
-    font-size: 40px;
+    font-size: 80px;
     text-align: center;
   }
   .main-index .section-presentacion-grilla .presentacion .multi-animada-titulos .subt-main {
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
   }
   .main-index .section-presentacion-grilla .presentacion .multi-animada-banner {
@@ -1086,12 +1167,12 @@ footer p {
     align-items: center;
   }
   .main-index .section-presentacion-grilla .presentacion .multi-animada-banner img {
-    width: 25%;
+    width: 20%;
     height: auto;
     margin-bottom: 40px;
   }
   .main-index .section-presentacion-grilla #carouselExampleAutoplaying {
-    width: 70%;
+    width: 80%;
     height: auto;
     display: flex;
   }
@@ -1099,15 +1180,20 @@ footer p {
     width: 95%;
     height: auto;
   }
+  .main-index .section-presentacion-grilla .BanneryPromos #imgPromociones {
+    width: 100%;
+    height: auto;
+  }
   /* Sobre Nosotros */
   .sobre-nosotros-index {
-    background-color: #073c59;
+    background-color: #0f9ac0;
     flex-direction: column;
   }
   .sobre-nosotros-index .titulo-nosotros {
     font-size: 35px;
+    text-align: center;
     justify-content: center;
-    margin-bottom: 70px;
+    margin-bottom: 25px;
   }
   .sobre-nosotros-index .parrafo-nosotros {
     font-size: 25px;
@@ -1121,7 +1207,7 @@ footer p {
     display: flex;
   }
   .main-sobre-nosotros .sobre-nosotros-1 {
-    background-color: #073c59;
+    background-color: #0f9ac0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1232,13 +1318,14 @@ footer p {
   }
   /* Nuestra mision */
   .nuestra-mision-index {
-    background-color: #073c59;
+    background-color: #0f9ac0;
     flex-direction: column;
   }
   .nuestra-mision-index .titulo-mision {
     font-size: 35px;
+    text-align: center;
     justify-content: center;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
   }
   .nuestra-mision-index .parrafo-mision {
     font-size: 25px;
@@ -1313,6 +1400,7 @@ footer p {
   }
   .main-contacto .contenedor-contacto .form-contacto {
     flex-direction: column;
+    align-self: center;
     align-items: center;
     width: 90%;
     height: auto;
