@@ -5,13 +5,13 @@ let secondBannerShown = false;
 // Función para mostrar el primer banner
 function showFirstBanner() {
     return Swal.fire({
-        title: "¡<strong>Regalos fin de Año</strong>!",
-        text: "¡Aprovechá nuestras Ofertas!",
+        title: "<strong>La Mejor Calidad</strong>",
+        text: "¡Al mejor Precio!",
         showCancelButton: true,
         confirmButtonText: "Pedir Ahora",
         confirmButtonColor: "#0f9ac0",
-        imageUrl: "../multimedia/img/productos/regalosfindeaño.jpeg",
-        imageAlt: "Regalos fin de Año",
+        imageUrl: "../multimedia/img/productos/agenda2025.jpg",
+        imageAlt: "Agendas Personalizadas 2025",
         padding: '1px',
         width: "500px",
         height: "450px",
@@ -30,10 +30,10 @@ function showFirstBanner() {
 // Función para mostrar el segundo banner en la parte inferior izquierda
 function showSecondBanner() {
     return Swal.fire({
-        title: "¡Oferta Especial!",
-        text: "¡Agendas!",
-        imageUrl: "../multimedia/img/productos/agendas2025-bgblue.jpeg",
-        imageAlt: "Agendas",
+        title: "¡Agendas 2025!",
+        text: "¡Escribinos ahora por Whatsapp!",
+        imageUrl: "../multimedia/img/productos/agenda2025.jpg",
+        imageAlt: "Agendas Personalizadas 2025",
         showCancelButton: true,
         showConfirmButton: true,
         confirmButtonText: "Pedir",
