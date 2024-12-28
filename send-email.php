@@ -25,12 +25,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // Enviar el correo
     if (mail($to, $subject, $body, $headers)) {
-        echo "¡Gracias por tu mensaje! Nuestro equipo te responderá en breve.\r\nSaludos cordiales.";
+        // Redirigir al index.html
+        header("Location: /pages/gracias.html");
+        exit; // Asegura que no se ejecuten más líneas de código.
     } else {
         echo "Hubo un error al enviar el mensaje. Inténtelo más tarde.";
     }
 } else {
     echo "Método no permitido.";
 }
-header('Location: index.html');
 ?>

@@ -600,6 +600,15 @@ body::-webkit-scrollbar {
   color: #16161D;
 }
 
+#gracias-title {
+  font-family: "oswald";
+  margin-top: 1200px;
+}
+
+#parrafo-gracias {
+  font-size: 125px;
+}
+
 /* Footer */
 footer {
   display: flex;
