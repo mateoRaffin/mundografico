@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit;
     }
 
-    // Configurar los datos del correo
+    // Configurar los datos del correo.
     $to = "info@mundo-grafico.com";
     $subject = "Nuevo mensaje de contacto";
     $body = "Nombre: $nombre\nEmail: $email\nMensaje: $mensaje";
@@ -25,14 +25,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // Enviar el correo
     if (mail($to, $subject, $body, $headers)) {
-        echo "¡Gracias por tu mensaje! Nuestro equipo te responderá en breve, 
-        Saludos cordiales,
-        El equipo de Mundo Gráfico.
-        En Impresiones Todo.";
+        echo "¡Gracias por tu mensaje! Nuestro equipo te responderá en breve.\r\nSaludos cordiales.";
     } else {
         echo "Hubo un error al enviar el mensaje. Inténtelo más tarde.";
     }
 } else {
     echo "Método no permitido.";
 }
+header('Location: index.html');
 ?>
