@@ -1,0 +1,51 @@
+.header-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo-mundografico-gracias {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+#gracias-cont {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+
+    #gracias-title {
+        font-family: map-get($map: $fuentes, $key: listasnavegacion);
+        font-weight: 600;
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #parrafo-gracias {
+        font-family: map-get($map: $fuentes, $key: listasnavegacion);
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #equipoMG-gracias {
+        font-family: map-get($map: $fuentes, $key: oswaldreg);
+        font-size: 24px;
+        margin-top: 100px;
+        // margin-left: 1em;
+        text-align: center;
+        background-color: $color-fondo;
+        width: 20%;
+        color: aliceblue;
+    }
+
+    #impresiones-gracias {
+        font-family: map-get($map: $fuentes, $key: oswaldreg);
+        font-size: 20px;
+        // margin-left: 1.5em;
+        text-align: center;
+        background-color: $color-fondo;
+        width: 20%;
+        color: aliceblue;
+    }
+}
