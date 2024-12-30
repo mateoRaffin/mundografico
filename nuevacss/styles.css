@@ -1003,6 +1003,41 @@ footer p {
     border: #073c59;
     color: #FAFAFA;
   }
+  /* Gracias */
+  .header-index-gracias .logo-mundografico-gracias {
+    width: 60px;
+    height: 60px;
+  }
+  #gracias-cont {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+  }
+  #gracias-cont #gracias-title {
+    text-align: center;
+  }
+  #gracias-cont #parrafo-gracias {
+    text-align: center;
+  }
+  #gracias-cont #equipoMG-gracias {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 100px;
+    text-align: center;
+    background-color: #073c59;
+    width: 30%;
+    color: aliceblue;
+  }
+  #gracias-cont #impresiones-gracias {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    text-align: center;
+    background-color: #073c59;
+    width: 30%;
+    color: aliceblue;
+  }
   /*Footer*/
   footer {
     display: flex;
@@ -1425,6 +1460,41 @@ footer p {
     background-color: #073c59;
     border: #073c59;
     color: #FAFAFA;
+  }
+  /* Gracias */
+  .header-index-gracias .logo-mundografico-gracias {
+    width: 60px;
+    height: 60px;
+  }
+  #gracias-cont {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+  }
+  #gracias-cont #gracias-title {
+    text-align: center;
+  }
+  #gracias-cont #parrafo-gracias {
+    text-align: center;
+  }
+  #gracias-cont #equipoMG-gracias {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 100px;
+    text-align: center;
+    background-color: #073c59;
+    width: 30%;
+    color: aliceblue;
+  }
+  #gracias-cont #impresiones-gracias {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    text-align: center;
+    background-color: #073c59;
+    width: 30%;
+    color: aliceblue;
   }
   /*Footer*/
   footer {

@@ -33,7 +33,6 @@
         font-family: map-get($map: $fuentes, $key: oswaldreg);
         font-size: 24px;
         margin-top: 100px;
-        // margin-left: 1em;
         text-align: center;
         background-color: $color-fondo;
         width: 20%;
@@ -43,7 +42,6 @@
     #impresiones-gracias {
         font-family: map-get($map: $fuentes, $key: oswaldreg);
         font-size: 20px;
-        // margin-left: 1.5em;
         text-align: center;
         background-color: $color-fondo;
         width: 20%;
