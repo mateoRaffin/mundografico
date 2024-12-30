@@ -1,4 +1,6 @@
 .header-index-gracias {
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,16 +13,18 @@
 }
 
 #gracias-cont {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     margin-top: 70px;
-
     #gracias-title {
         font-family: map-get($map: $fuentes, $key: listasnavegacion);
         font-weight: 600;
         font-size: 35px;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 
     #parrafo-gracias {
@@ -29,22 +33,14 @@
         text-align: center;
     }
 
-    #equipoMG-gracias {
-        font-family: map-get($map: $fuentes, $key: oswaldreg);
-        font-size: 24px;
+    #firma-gracias{
+        width: 100%;
+        height: auto;
         margin-top: 100px;
-        text-align: center;
-        background-color: $color-fondo;
-        width: 20%;
-        color: aliceblue;
-    }
-
-    #impresiones-gracias {
-        font-family: map-get($map: $fuentes, $key: oswaldreg);
-        font-size: 20px;
-        text-align: center;
-        background-color: $color-fondo;
-        width: 20%;
-        color: aliceblue;
+        #equipoMG-gracias {
+            font-size: 20px;
+            margin-left: 10px;
+            text-decoration:underline;
+        }
     }
 }
