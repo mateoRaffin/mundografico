@@ -18,17 +18,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
+html,
 body {
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
+  scroll-behavior: smooth;
+  overflow-y: auto;
 }
 
-body::-webkit-scrollbar {
-  display: none;
+::-webkit-scrollbar-track {
+  background: #FAFAFA;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #073C59;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0f9AC0;
 }
 
 /* Header - Nav */
@@ -40,7 +53,7 @@ body::-webkit-scrollbar {
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: #073c59;
+  background-color: #073C59;
   box-shadow: 0px 2px 7px #073c59;
 }
 .header-index .logo-mundografico {
@@ -209,7 +222,7 @@ body::-webkit-scrollbar {
 
 /* Sobre Nosotros */
 .sobre-nosotros-index {
-  background-color: #0f9ac0;
+  background-color: #0f9AC0;
   padding: 1% 1%;
   display: flex;
   flex-direction: column;
@@ -235,7 +248,7 @@ body::-webkit-scrollbar {
   margin-bottom: 10px;
 }
 .main-sobre-nosotros .sobre-nosotros-1 {
-  background-color: #0f9ac0;
+  background-color: #0f9AC0;
   margin-top: 165px;
   padding: 5% 5%;
   display: flex;
@@ -394,7 +407,7 @@ body::-webkit-scrollbar {
 
 /* Nuestra mision */
 .nuestra-mision-index {
-  background-color: #0f9ac0;
+  background-color: #0f9AC0;
   padding: 2% 2%;
   display: flex;
   flex-direction: column;
@@ -519,11 +532,11 @@ body::-webkit-scrollbar {
   padding: 2px;
 }
 .contacto-index .form-index .formulario-contacto .texto-entrada:focus {
-  border-color: #073c59;
+  border-color: #073C59;
 }
 .contacto-index .form-index .formulario-contacto .boton-form {
   color: #FAFAFA;
-  background-color: #073c59;
+  background-color: #073C59;
   padding: 2px;
 }
 .contacto-index .form-index .formulario-contacto .boton-form:hover {
@@ -589,11 +602,11 @@ body::-webkit-scrollbar {
   padding: 2px;
 }
 .main-contacto .contenedor-contacto .form-contacto .animacion-contacto .formulario-contacto .texto-entrada:focus {
-  border-color: #073c59;
+  border-color: #073C59;
 }
 .main-contacto .contenedor-contacto .form-contacto .animacion-contacto .formulario-contacto .boton-form {
   color: #FAFAFA;
-  background-color: #073c59;
+  background-color: #073C59;
   padding: 2px;
 }
 .main-contacto .contenedor-contacto .form-contacto .animacion-contacto .formulario-contacto .boton-form:hover {
@@ -604,7 +617,7 @@ body::-webkit-scrollbar {
 footer {
   display: flex;
   justify-content: center;
-  background-color: #073c59;
+  background-color: #073C59;
   padding-top: 10px;
 }
 footer p {
@@ -635,7 +648,7 @@ footer p {
     margin-bottom: 20px;
     width: 100%;
     height: 68px;
-    background-color: #073c59;
+    background-color: #073C59;
   }
   .header-index .navbar {
     width: 100%;
@@ -758,7 +771,7 @@ footer p {
   }
   /* Sobre Nosotros */
   .sobre-nosotros-index {
-    background-color: #0f9ac0;
+    background-color: #0f9AC0;
     flex-direction: column;
   }
   .sobre-nosotros-index .titulo-nosotros {
@@ -779,7 +792,7 @@ footer p {
     display: flex;
   }
   .main-sobre-nosotros .sobre-nosotros-1 {
-    background-color: #0f9ac0;
+    background-color: #0f9AC0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -892,7 +905,7 @@ footer p {
   }
   /* Nuestra mision */
   .nuestra-mision-index {
-    background-color: #0f9ac0;
+    background-color: #0f9AC0;
     flex-direction: column;
   }
   .nuestra-mision-index .titulo-mision {
@@ -945,8 +958,8 @@ footer p {
     align-self: center;
   }
   .contacto-index .form-index .formulario-contacto .boton-form {
-    background-color: #073c59;
-    border: #073c59;
+    background-color: #073C59;
+    border: #073C59;
     color: #FAFAFA;
   }
   .main-contacto {
@@ -999,8 +1012,8 @@ footer p {
     align-self: center;
   }
   .main-contacto .contenedor-contacto .form-contacto .animacion-contacto .formulario-contacto .boton-form {
-    background-color: #073c59;
-    border: #073c59;
+    background-color: #073C59;
+    border: #073C59;
     color: #FAFAFA;
   }
   /* Gracias */
@@ -1043,7 +1056,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #073c59;
+    background-color: #073C59;
   }
   footer p {
     color: #FAFAFA;
@@ -1054,7 +1067,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #073c59;
+    background-color: #073C59;
   }
   .footer-contacto p {
     color: #FAFAFA;
@@ -1065,7 +1078,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #073c59;
+    background-color: #073C59;
   }
   .footer-galeria p {
     color: #FAFAFA;
@@ -1076,7 +1089,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #073c59;
+    background-color: #073C59;
   }
   .footer-productos p {
     color: #FAFAFA;
@@ -1087,7 +1100,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #073c59;
+    background-color: #073C59;
   }
   .footer-aboutus p {
     color: #FAFAFA;
@@ -1101,7 +1114,7 @@ footer p {
     margin-bottom: 20px;
     width: 100%;
     height: 68px;
-    background-color: #073c59;
+    background-color: #073C59;
   }
   .header-index .navbar {
     width: 100%;
@@ -1221,7 +1234,7 @@ footer p {
   }
   /* Sobre Nosotros */
   .sobre-nosotros-index {
-    background-color: #0f9ac0;
+    background-color: #0f9AC0;
     flex-direction: column;
   }
   .sobre-nosotros-index .titulo-nosotros {
@@ -1242,7 +1255,7 @@ footer p {
     display: flex;
   }
   .main-sobre-nosotros .sobre-nosotros-1 {
-    background-color: #0f9ac0;
+    background-color: #0f9AC0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1353,7 +1366,7 @@ footer p {
   }
   /* Nuestra mision */
   .nuestra-mision-index {
-    background-color: #0f9ac0;
+    background-color: #0f9AC0;
     flex-direction: column;
   }
   .nuestra-mision-index .titulo-mision {
@@ -1406,8 +1419,8 @@ footer p {
     align-self: center;
   }
   .contacto-index .form-index .formulario-contacto .boton-form {
-    background-color: #073c59;
-    border: #073c59;
+    background-color: #073C59;
+    border: #073C59;
     color: #FAFAFA;
   }
   .main-contacto {
@@ -1457,8 +1470,8 @@ footer p {
     align-self: center;
   }
   .main-contacto .contenedor-contacto .form-contacto .animacion-contacto .formulario-contacto .boton-form {
-    background-color: #073c59;
-    border: #073c59;
+    background-color: #073C59;
+    border: #073C59;
     color: #FAFAFA;
   }
   /* Gracias */
@@ -1501,7 +1514,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #073c59;
+    background-color: #073C59;
   }
   footer p {
     color: #FAFAFA;
@@ -1512,7 +1525,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #073c59;
+    background-color: #073C59;
   }
   .footer-contacto p {
     color: #FAFAFA;
@@ -1523,7 +1536,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #073c59;
+    background-color: #073C59;
   }
   .footer-galeria p {
     color: #FAFAFA;
@@ -1534,7 +1547,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #073c59;
+    background-color: #073C59;
   }
   .footer-productos p {
     color: #FAFAFA;
@@ -1545,7 +1558,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #073c59;
+    background-color: #073C59;
   }
   .footer-aboutus p {
     color: #FAFAFA;
@@ -1557,7 +1570,7 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #073c59;
+  background-color: #073C59;
   box-shadow: 0px 2px 7px #073c59;
 }
 .header-index-gracias .logo-mundografico-gracias {
@@ -1586,14 +1599,14 @@ footer p {
   font-size: 24px;
   margin-top: 100px;
   text-align: center;
-  background-color: #073c59;
+  background-color: #073C59;
   width: 20%;
   color: aliceblue;
 }
 #gracias-cont #impresiones-gracias {
   font-size: 20px;
   text-align: center;
-  background-color: #073c59;
+  background-color: #073C59;
   width: 20%;
   color: aliceblue;
 }
